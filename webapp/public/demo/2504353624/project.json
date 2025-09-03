@@ -1,0 +1,1039 @@
+{
+    "projectInfo": {
+        "name": "Untitled",
+        "id": "2504353624",
+        "file": null,
+        "preview": null
+    },
+    "assets": {
+        "images": {},
+        "videos": {},
+        "models": {}
+    },
+    "layers": [
+        {
+            "name": "Day (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/depth_map.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/depth_map.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1092.38464,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Day (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/waterflow.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/waterflow.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1092.38464,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Bird",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 25,
+                "lifetime": 13.0,
+                "velocity": {
+                    "x": -49.5,
+                    "y": 19.5
+                },
+                "color": "#FFFFFF",
+                "size": 35.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3088.64355,
+                    1400.81689,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.015
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2513.28833,
+                    1392.57556,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Dust motes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 6.5,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fa05fe01b34c",
+                "size": 7.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Day Lock (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/waterwaves.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/waterwaves.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Day Lock (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/opacity.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/opacity.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Day Lock (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/foliagesway.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/foliagesway.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Dust motes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 6.5,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fa05fe01b34c",
+                "size": 7.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1892.07153,
+                    1287.78455,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Night A (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Night A (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/waterripple.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/waterripple.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Night A (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Bird",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 25,
+                "lifetime": 13.0,
+                "velocity": {
+                    "x": -49.5,
+                    "y": 19.5
+                },
+                "color": "#FFFFFF",
+                "size": 35.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3088.64355,
+                    1375.07092,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.015
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2 A",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2328.47388,
+                    1656.6366,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1915.85303,
+                    531.93872,
+                    0.0
+                ],
+                "scale": [
+                    0.39279,
+                    0.39279,
+                    0.39279
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Star field",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 100,
+                "lifetime": 6.5,
+                "velocity": {
+                    "x": 1,
+                    "y": 0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 8.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1924.93091,
+                    1699.57764,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Night Lock A (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.64722,
+                    0.0
+                ],
+                "scale": [
+                    1.167,
+                    1.167,
+                    1.167
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Night Lock A (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.64722,
+                    0.0
+                ],
+                "scale": [
+                    1.167,
+                    1.167,
+                    1.167
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2 A",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1907.91553,
+                    1235.77405,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Night (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Night (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Night (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1093.55811,
+                    0.0
+                ],
+                "scale": [
+                    1.14095,
+                    1.14095,
+                    1.14095
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1915.85303,
+                    531.93872,
+                    0.0
+                ],
+                "scale": [
+                    0.39279,
+                    0.39279,
+                    0.39279
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Star field",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 100,
+                "lifetime": 6.5,
+                "velocity": {
+                    "x": 1,
+                    "y": 0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 8.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1924.93091,
+                    1699.57764,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.03
+                }
+            ]
+        },
+        {
+            "name": "Bird",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 25,
+                "lifetime": 13.0,
+                "velocity": {
+                    "x": -49.5,
+                    "y": 19.5
+                },
+                "color": "#FFFFFF",
+                "size": 35.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3088.64355,
+                    1375.07092,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.04
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2328.47388,
+                    1516.73181,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Night Lock (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.64722,
+                    0.0
+                ],
+                "scale": [
+                    1.167,
+                    1.167,
+                    1.167
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Night Lock (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.64722,
+                    0.0
+                ],
+                "scale": [
+                    1.167,
+                    1.167,
+                    1.167
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 12.5,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#FFFFFF",
+                "size": 67.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1907.91553,
+                    1235.77405,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.01
+                }
+            ]
+        },
+        {
+            "name": "Overall Effects",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/godrays_downsample2.vert",
+                    "assets/godrays_cast.vert",
+                    "assets/godrays_gaussian.vert",
+                    "assets/godrays_combine.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/godrays_downsample2.frag",
+                    "assets/godrays_cast.frag",
+                    "assets/godrays_gaussian.frag",
+                    "assets/godrays_combine.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        }
+    ],
+    "userProperties": {}
+}

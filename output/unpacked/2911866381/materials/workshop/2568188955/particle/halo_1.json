@@ -1,0 +1,25 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"REFRACT" : 1
+			},
+			"constantshadervalues" : 
+			{
+				"ui_editor_properties_overbright" : 1.1
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericparticle",
+			"textures" : 
+			[
+				"workshop/2568188955/particle/fRKyPAu",
+				"workshop/2568188955/particle/suTFjW9"
+			]
+		}
+	]
+}

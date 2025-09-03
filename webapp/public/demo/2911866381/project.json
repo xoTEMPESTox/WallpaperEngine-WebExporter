@@ -1,0 +1,1663 @@
+{
+    "projectInfo": {
+        "name": "Untitled",
+        "id": "2911866381",
+        "file": null,
+        "preview": null
+    },
+    "assets": {
+        "images": {},
+        "videos": {},
+        "models": {}
+    },
+    "layers": [
+        {
+            "name": "bg_day",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/blend.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/blend.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1647.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\uad6c\ub984 (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/scroll.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/scroll.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    2146.25146,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\uad6c\ub984 (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/waterflow.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/waterflow.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    2146.25146,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Blinking Stars_01(\ub0ae\ubc24)",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 40,
+                "lifetime": 6.0,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 17.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1833.11438,
+                    2583.85205,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Glowing Stars_01(\ubc24)",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 40,
+                "lifetime": 6.0,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 165.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1833.11438,
+                    2583.85205,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Shooting_Star_01(\ubc24)",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 4.5,
+                "velocity": {
+                    "x": 175.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 4.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1997.12317,
+                    1452.86414,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bg_day_mountain (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bg_day_mountain (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/foliagesway.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/foliagesway.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bg_day_mountain (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/shine_downsample2.vert",
+                    "assets/shine_cast.vert",
+                    "assets/shine_gaussian.vert",
+                    "assets/shine_combine.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/shine_downsample2.frag",
+                    "assets/shine_cast.frag",
+                    "assets/shine_gaussian.frag",
+                    "assets/shine_combine.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bg_day_mountain (4)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/waterripple.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/waterripple.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Birds",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 30.0,
+                "velocity": {
+                    "x": -110.0,
+                    "y": 0.0
+                },
+                "color": "#FFFFFF",
+                "size": 125.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    -162.70496,
+                    1766.93677,
+                    0.0
+                ],
+                "scale": [
+                    -1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "wind-blur",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 2,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": -420.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 50.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    4037.79395,
+                    1404.54529,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Leaves",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 32.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    290.97247,
+                    1286.24365,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Leaves",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 32.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3429.74976,
+                    1318.3175,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Rain perspective",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 400,
+                "lifetime": 0.5,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -3000.0
+                },
+                "color": "#FFFFFF",
+                "size": 5.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1467.48633,
+                    1385.03137,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Small Snowflakes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 35,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 100.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Small Snowflakes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 35,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 100.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Small Snowflakes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 35,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 100.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "\ucc3d\ubb38 \ud750\ub9bc",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/blur_precise_gaussian.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/blur_precise_gaussian.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "rain_on_the_glass",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 50,
+                "lifetime": 2.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -50.0
+                },
+                "color": "#FFFFFF",
+                "size": 110.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2057.85449,
+                    1782.6748,
+                    0.0
+                ],
+                "scale": [
+                    1.8,
+                    1.8,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Rain_secondary",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 700,
+                "lifetime": 15.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -2.5
+                },
+                "color": "#FFFFFF",
+                "size": 20.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2023.74243,
+                    1332.65979,
+                    0.0
+                ],
+                "scale": [
+                    1.8,
+                    1.8,
+                    1.8
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "rain_drop_screen",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 25,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -25.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 125.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2040.96924,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.6,
+                    1.6,
+                    1.6
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "snow_drop_screen",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 25,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -25.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 125.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2040.96924,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.6,
+                    1.6,
+                    1.6
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "wet_snow_particles1",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 100,
+                "lifetime": 6.0,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -10.0
+                },
+                "color": "#FFFFFF",
+                "size": 190.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    2.015,
+                    2.015,
+                    2.015
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.4
+                }
+            ]
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1718.79993,
+                    917.53516,
+                    0.0
+                ],
+                "scale": [
+                    0.3525,
+                    0.3525,
+                    0.3525
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3112.22217,
+                    776.65546,
+                    0.0
+                ],
+                "scale": [
+                    0.3525,
+                    0.3525,
+                    0.3525
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    832.75049,
+                    909.25635,
+                    0.0
+                ],
+                "scale": [
+                    0.3525,
+                    0.3525,
+                    0.3525
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bg_day_mask",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    1080.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\ub178\ud2b8\ubd81 (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/gradient_color.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/gradient_color.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1583.49573,
+                    180.12296,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\ub178\ud2b8\ubd81 (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/opacity.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/opacity.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1583.49573,
+                    180.12296,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\ub178\ud2b8\ubd81 \ud384\uc2a4",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/pulse.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/pulse.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1975.91577,
+                    368.25992,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/audio_ring.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/audio_ring.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1200.46667,
+                    837.00714,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/shake.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/shake.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1200.46667,
+                    837.00714,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1200.46667,
+                    837.00714,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2738.9043,
+                    900.82715,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2738.9043,
+                    900.82715,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Audio Ring (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2738.9043,
+                    900.82715,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Compose (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/Simple_Audio_Bars.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/Simple_Audio_Bars.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1274.19092,
+                    625.922,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    -1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Compose (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/perspective.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/perspective.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1274.19092,
+                    625.922,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    -1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Compose (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2689.43213,
+                    712.93933,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    -1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Compose (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2689.43213,
+                    712.93933,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    -1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "cat",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    118.52763,
+                    919.66602,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Clock",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/blur_downsample4.vert",
+                    "assets/blur_gaussian.vert",
+                    "assets/blur_combine.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/blur_downsample4.frag",
+                    "assets/blur_gaussian.frag",
+                    "assets/blur_combine.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    443.55789,
+                    884.17621,
+                    0.0
+                ],
+                "scale": [
+                    0.6,
+                    0.6,
+                    0.6
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Breath",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 0.2,
+                "lifetime": 8.0,
+                "velocity": {
+                    "x": 10.0,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 200.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2043.74719,
+                    242.74617,
+                    0.0
+                ],
+                "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\ucd08 \uc5f0\uae30",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 8,
+                "lifetime": 1.3,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#cd32cd32cd32",
+                "size": 40.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1241.25537,
+                    1043.09241,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\ucd08 \ud384\uc2a4",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    1235.84985,
+                    1058.88513,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bottle",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2842.43311,
+                    973.61194,
+                    0.0
+                ],
+                "scale": [
+                    1.33,
+                    1.33,
+                    1.33
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "bottle pulse",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/pulse_.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/pulse_.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2843.24902,
+                    984.36859,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "\uc870\uba85\ubc18\uc0ac",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/reflection.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/reflection.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    2912.78296,
+                    994.04407,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "fire",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 2.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#FFFFFF",
+                "size": 300.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3356.69971,
+                    747.93787,
+                    0.0
+                ],
+                "scale": [
+                    1.1,
+                    1.1,
+                    1.1
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "fire_mask",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    3396.0,
+                    843.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "fire_pulse",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    3256.29443,
+                    586.6955,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "nearfire_pulse",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    3053.65479,
+                    590.52393,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Ash",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 8.5,
+                "velocity": {
+                    "x": 0.0,
+                    "y": -25.0
+                },
+                "color": "#a8578c738c73",
+                "size": 32.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3395.36108,
+                    822.54083,
+                    0.0
+                ],
+                "scale": [
+                    0.19886,
+                    0.19886,
+                    0.19886
+                ],
+                "rotation": 0
+            },
+            "effects": []
+        },
+        {
+            "name": "Dust motes",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 10,
+                "lifetime": 4.5,
+                "velocity": {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "color": "#fa05fe01b34c",
+                "size": 7.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1920.0,
+                    -205.04224,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Luminance Lighting (1)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/tone_mapping.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/tone_mapping.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Luminance Lighting (2)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Luminance Lighting (3)",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [],
+                "fragmentShaders": [],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        },
+        {
+            "name": "Post-Processing Layer",
+            "type": "shader",
+            "shader": {
+                "vertexShaders": [
+                    "assets/color_grading.vert"
+                ],
+                "fragmentShaders": [
+                    "assets/color_grading.frag"
+                ],
+                "uniforms": {}
+            },
+            "transform": {
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 0.0
+                }
+            ]
+        }
+    ],
+    "userProperties": {}
+}

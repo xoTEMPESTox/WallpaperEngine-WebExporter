@@ -1,0 +1,22 @@
+{
+	"passes" : 
+	[
+		{
+			"alphawriting" : "default",
+			"blending" : "additive",
+			"combos" : 
+			{
+				"REFRACT" : 0
+			},
+			"constantshadervalues" : 
+			{
+				"ui_editor_properties_overbright" : 0.75
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericparticle",
+			"textures" : [ "workshop/2888067659/particle/wind_test" ]
+		}
+	]
+}

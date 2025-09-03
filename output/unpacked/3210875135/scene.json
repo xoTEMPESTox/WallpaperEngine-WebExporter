@@ -1,0 +1,1837 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : false,
+		"bloomhdrfeather" : 0.1,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 1.619,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 2.0,
+		"bloomthreshold" : 0.64999998,
+		"bloomtint" : "1.00000 1.00000 1.00000",
+		"camerafade" : true,
+		"cameraparallax" : true,
+		"cameraparallaxamount" : 0.1,
+		"cameraparallaxdelay" : 1.64,
+		"cameraparallaxmouseinfluence" : 0.1,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.69999999,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 0.69999999,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : false,
+		"lightconfig" : 
+		{
+			"point" : 2,
+			"tube" : 1
+		},
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"perspectiveoverridefov" : 95.0,
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.04
+	},
+	"objects" : 
+	[
+		{
+			"alpha" : 0.81,
+			"castshadow" : false,
+			"color" : "0.57647 0.57647 0.57647",
+			"id" : 93,
+			"image" : "models/DDDDD.json",
+			"locktransforms" : true,
+			"name" : "DDDDD",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"size" : "3840.00000 2160.00000"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.22199",
+			"cascadedistance0" : 1152.0,
+			"cascadedistance1" : 2304.0,
+			"cascadedistance2" : 4224.0,
+			"castshadow" : false,
+			"color" : "0.76471 0.38824 0.56471",
+			"density" : 2.0,
+			"exponent" : 1.0599999,
+			"id" : 101,
+			"intensity" : 14.04,
+			"light" : "lpoint",
+			"name" : "",
+			"origin" : "484.79395 318.49805 826.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"radius" : 3000.0,
+			"volumetricsexponent" : 1.0
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.01690",
+			"cascadedistance0" : 1152.0,
+			"cascadedistance1" : 2304.0,
+			"cascadedistance2" : 4224.0,
+			"castshadow" : false,
+			"color" : "0.00000 0.20784 0.37255",
+			"controlpoint" : "-3297.70654 2951.35620 0.00000",
+			"density" : 2.0,
+			"exponent" : 1.0599999,
+			"id" : 106,
+			"intensity" : 11.28,
+			"light" : "ltube",
+			"name" : "",
+			"origin" : "3294.17944 572.40771 675.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"radius" : 3000.0,
+			"volumetricsexponent" : 1.0
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.22199",
+			"cascadedistance0" : 1152.0,
+			"cascadedistance1" : 2304.0,
+			"cascadedistance2" : 4224.0,
+			"castshadow" : false,
+			"color" : "0.10980 0.35686 0.55686",
+			"density" : 2.0,
+			"exponent" : 1.0599999,
+			"id" : 107,
+			"intensity" : 25.0,
+			"light" : "lpoint",
+			"name" : "",
+			"origin" : "3967.06641 2809.76855 2000.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"radius" : 3000.0,
+			"volumetricsexponent" : 1.0
+		},
+		{
+			"angles" : "0.00000 0.00000 -0.78540",
+			"id" : 605,
+			"instanceoverride" : 
+			{
+				"id" : 607,
+				"rate" : 0.69999999
+			},
+			"name" : "Shooting_Star_01",
+			"origin" : "433.44800 1705.83655 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"particle" : "particles/workshop/2562725207/Shooting_Star_01.json",
+			"scale" : "3.00000 3.00000 3.00000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "shootingstar"
+				},
+				"value" : true
+			}
+		},
+		{
+			"id" : 588,
+			"instanceoverride" : 
+			{
+				"alpha" : 2.0,
+				"id" : 0
+			},
+			"name" : "Glowing Stars_02",
+			"origin" : "2450.41284 1363.26685 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"particle" : "particles/workshop/2562725207/Star_05.json",
+			"scale" : "1.64015 1.64015 1.64015",
+			"visible" : 
+			{
+				"user" : "stars",
+				"value" : true
+			}
+		},
+		{
+			"id" : 583,
+			"instanceoverride" : null,
+			"name" : "Glowing Stars_01",
+			"origin" : "1840.39099 1769.94788 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"particle" : "particles/workshop/2562725207/Star_04.json",
+			"scale" : "1.10974 1.10974 1.10974",
+			"visible" : 
+			{
+				"user" : "stars",
+				"value" : true
+			}
+		},
+		{
+			"id" : 573,
+			"instanceoverride" : null,
+			"name" : "Blinking Stars_01",
+			"origin" : "1920.87793 1810.80042 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"particle" : "particles/workshop/2562725207/Star_01.json",
+			"scale" : "1.12545 1.12545 1.12545",
+			"visible" : 
+			{
+				"user" : "stars",
+				"value" : true
+			}
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/godrays/effect.json",
+					"id" : 176,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"noiseamount" : 0.40000001,
+								"noisescale" : 3.0,
+								"noisesmoothness" : 0.2,
+								"noisespeed" : 0.15000001,
+								"raythreshold" : 0.36000001
+							},
+							"id" : 177
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"center" : "0.5 0.5",
+								"color" : "1 1 1",
+								"rayintensity" : 0.5,
+								"raylength" : 0.41999999
+							},
+							"id" : 178
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"blurscale" : "2 2"
+							},
+							"id" : 179
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"blurscale" : "2 2"
+							},
+							"id" : 180
+						},
+						{
+							"id" : 181
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 157,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160bgbgbgbgbgbg_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "Moon",
+			"origin" : "2756.00000 1996.50000 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"size" : "176.00000 181.00000",
+			"visible" : 
+			{
+				"user" : "moon",
+				"value" : true
+			}
+		},
+		{
+			"id" : 111,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.30000001,
+				"id" : 113,
+				"rate" : 5.0
+			},
+			"name" : "Circular Particles",
+			"origin" : "2756.00000 1996.50000 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"particle" : "particles/workshop/3098898533/new_particle_systemflat.json",
+			"scale" : "2.30965 2.30965 2.30965",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "shootingstar"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alpha" : 0.44,
+			"castshadow" : false,
+			"colorBlendMode" : 7,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2944127259/scroll/effect.json",
+					"id" : 377,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"repeat" : "1 1",
+								"speedx" : 0.079999998,
+								"speedy" : 0
+							},
+							"id" : 378
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2944127259/waterripple/effect.json",
+					"id" : 379,
+					"name" : "Movement",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"animationspeed" : 0.079999998,
+								"ratio" : 1,
+								"ripplestrength" : 0.14,
+								"scale" : 0.090000004,
+								"scrolldirection" : -0.77691442,
+								"scrollspeed" : 0.039999999
+							},
+							"id" : 380,
+							"textures" : [ null, null, "workshop/2944127259/effects/waterripplenormal" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 376,
+			"image" : "models/workshop/2944127259/clouds2.json",
+			"name" : "Clouds Middle",
+			"origin" : "1894.08179 1232.94141 0.00000",
+			"parallaxDepth" : "-1.00000 -1.00000",
+			"scale" : "2.14725 0.64797 1.00000",
+			"size" : "1920.00000 1080.00000",
+			"visible" : 
+			{
+				"user" : "clouds",
+				"value" : true
+			}
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/depthparallax/effect.json",
+					"id" : 69,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"center" : 0.30000001,
+								"scale" : "1 1",
+								"sens" : 1.0
+							},
+							"id" : 70,
+							"textures" : [ null, "after-sunset-minimal-4k-zm-3840x2160bgbgbgbg_bg_fg_depth" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 53,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160bgbgbgbg_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x216",
+			"origin" : "2484.00000 994.00000 0.00000",
+			"parallaxDepth" : "-0.40000 -0.40000",
+			"size" : "2712.00000 1126.00000"
+		},
+		{
+			"anchor" : "none",
+			"angles" : "-0.00000 -0.00000 -0.01036",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 5.5599999,
+			"castshadow" : false,
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3184554659/blurprecise/effect.json",
+					"id" : 61070,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "0.43 0.43"
+							},
+							"id" : 61071
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "0.43 0.43"
+							},
+							"id" : 61072
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/Nebula-Regular.otf",
+			"horizontalalign" : "center",
+			"id" : 61067,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "D a y",
+			"opaquebackground" : false,
+			"origin" : "486.07672 1807.67188 0.00000",
+			"padding" : 32,
+			"pointsize" : 30.0,
+			"scale" : "0.90281 0.85878 0.75558",
+			"size" : "169.00000 496.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3184554659';\n// Please note: Do not remove this line or asset references may break.\n// Please note: Do not remove this line or asset references may break.\n\n\nexport var scriptProperties = createScriptProperties()\n  .addCombo({\n    name: 'monthFormat',\n    label: 'Month Format',\n    options: [{\n      label: 'Numeric',\n      value: '1'\n    }, {\n      label: 'Abbreviated',\n      value: '2'\n    }, {\n      label: 'Full',\n      value: '3'\n    }]\n  })\n  .addCombo({\n    name: 'dayFormat',\n    label: 'Day Format',\n    options: [{\n      label: 'Abbreviated',\n      value: '1'\n    }, {\n      label: 'Full',\n      value: '2'\n    }]\n  })\n  .addCheckbox({\n    name: 'showDay',\n    label: 'Show Day',\n    value: true\n  })\n  .addCheckbox({\n    name: 'alignVertical',\n    label: 'Align Day Vertically',\n    value: true\n  })\n  .addCheckbox({\n    name: 'useDelimiter',\n    label: 'Use Delimiter',\n    value: true\n  })\n  .addText({\n    name: 'addDelimiter',\n    label: 'Delimiter',\n    value: '/'\n  })\n  .finish();\n\n\nlet months;\nlet day;\nvar delimiterValue;\nvar nl;\n\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n  if (scriptProperties.useDelimiter == true) {\n    delimiterValue = scriptProperties.addDelimiter\n  }\n  if (scriptProperties.useDelimiter == false) {\n    delimiterValue = [\n      ' '\n    ]\n  }\n  if (scriptProperties.alignVertical == true) {\n    nl = ['\\n']\n  }\n  if (scriptProperties.alignVertical == false) {\n    nl = [' ']\n  }\n  if (scriptProperties.monthFormat == 1) {\n    months = [\n      '1',\n      '2',\n      '3',\n      '4',\n      '5',\n      '6',\n      '7',\n      '8',\n      '9',\n      '10',\n      '11',\n      '12'\n    ]\n  }\n  if (scriptProperties.monthFormat == 2) {\n    months = [\n      'JAN',\n      'FEB',\n      'MAR',\n      'APR',\n      'MAY',\n      'JUN',\n      'JUL',\n      'AUG',\n      'SEP',\n      'OCT',\n      'NOV',\n      'DEC'\n    ]\n  }\n  if (scriptProperties.monthFormat == 3) {\n    months = [\n      'January',\n      'February',\n      'March',\n      'April',\n      'May',\n      'June',\n      'July',\n      'August',\n      'September',\n      'October',\n      'November',\n      'December'\n    ]\n  }\n  if (scriptProperties.dayFormat == 1) {\n    day = [\n      'S' + nl + 'U' + nl + 'N',\n      'M' + nl + 'O' + nl + 'N',\n      'T' + nl + 'U' + nl + 'E',\n      'W' + nl + 'E' + nl + 'D',\n      'T' + nl + 'H' + nl + 'U',\n      'F' + nl + 'R' + nl + 'I',\n      'S' + nl + 'A' + nl + 'T'\n    ]\n  }\n  if (scriptProperties.dayFormat == 2) {\n    day = [\n      'S' + nl + 'U' + nl + 'N' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'M' + nl + 'O' + nl + 'N' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'T' + nl + 'U' + nl + 'E' + nl + 'S' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'W' + nl + 'E' + nl + 'D' + nl + 'N' + nl + 'E' + nl + 'S' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'T' + nl + 'H' + nl + 'U' + nl + 'R' + nl + 'S' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'F' + nl + 'R' + nl + 'I' + nl + 'D' + nl + 'A' + nl + 'Y',\n      'S' + nl + 'A' + nl + 'T' + nl + 'U' + nl + 'R' + nl + 'D' + nl + 'A' + nl + 'Y'\n    ]\n  }\n  let date = new Date(); {\n    if (scriptProperties.showDay == true) {\n      return day[date.getDay()]\n    }\n    if (scriptProperties.showDay == false) {\n      return date.getDate() + delimiterValue + months[date.getMonth()] + delimiterValue + date.getFullYear();\n    }\n  }\n}\n",
+				"scriptproperties" : 
+				{
+					"addDelimiter" : "/",
+					"alignVertical" : true,
+					"dayFormat" : "1",
+					"monthFormat" : "1",
+					"showDay" : true,
+					"useDelimiter" : false
+				},
+				"value" : "S\nU\nN"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "daydatetime",
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.01036",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 5.46,
+			"castshadow" : false,
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3184554659/blurprecise/effect.json",
+					"id" : 61077,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1.33 1.33"
+							},
+							"id" : 61078
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1.33 1.33"
+							},
+							"id" : 61079
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/nasalization-rg.otf",
+			"horizontalalign" : "center",
+			"id" : 61075,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Date",
+			"opaquebackground" : false,
+			"origin" : "-130.78687 -87.03162 0.00000",
+			"padding" : 32,
+			"parent" : 61067,
+			"pointsize" : 58.0,
+			"scale" : "0.15484 0.15686 0.26144",
+			"size" : "276.00000 3221.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3184554659';\n// Please note: Do not remove this line or asset references may break.\n// Please note: Do not remove this line or asset references may break.\n\n\nexport var scriptProperties = createScriptProperties()\n  .addCombo({\n    name: 'monthFormat',\n    label: 'Month Format',\n    options: [{\n      label: 'Numeric',\n      value: '1'\n    }, {\n      label: 'Abbreviated',\n      value: '2'\n    }, {\n      label: 'Full',\n      value: '3'\n    }]\n  })\n  .addCombo({\n    name: 'dayFormat',\n    label: 'Day Format',\n    options: [{\n      label: 'Abbreviated',\n      value: '1'\n    }, {\n      label: 'Full',\n      value: '2'\n    }]\n  })\n  .addCheckbox({\n    name: 'showDay',\n    label: 'Show Day',\n    value: false\n  })\n  .addCheckbox({\n    name: 'alignVertical',\n    label: 'Align Day Vertically',\n    value: true\n  })\n  .addCheckbox({\n    name: 'useDelimiter',\n    label: 'Use Delimiter',\n    value: false\n  })\n  .addText({\n    name: 'addDelimiter',\n    label: 'Delimiter',\n    value: '/'\n  })\n  .finish();\n\n\nlet months;\nlet day;\nlet dtt;\nlet year;\nvar delimiterValue;\nvar newLine;\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n  if (scriptProperties.useDelimiter == true) {\n    delimiterValue = scriptProperties.addDelimiter\n  }\n  if (scriptProperties.useDelimiter == false && scriptProperties.alignVertical == true) {\n    delimiterValue = [\n      '\\n\\n'\n    ]\n  }\n  if (scriptProperties.useDelimiter == false && scriptProperties.alignVertical == false) {\n    delimiterValue = [\n      ' '\n    ]\n  }\n  if (scriptProperties.alignVertical == true) {\n    newLine = [\n      '\\n'\n    ]\n  }\n  if (scriptProperties.alignVertical == false) {\n    newLine = [\n      ''\n    ]\n  }\n  if (scriptProperties.monthFormat == 1) {\n    months = [\n      '0' + newLine + '1',\n      '0' + newLine + '2',\n      '0' + newLine + '3',\n      '0' + newLine + '4',\n      '0' + newLine + '5',\n      '0' + newLine + '6',\n      '0' + newLine + '7',\n      '0' + newLine + '8',\n      '0' + newLine + '9',\n      '1' + newLine + '0',\n      '1' + newLine + '1',\n      '1' + newLine + '2'\n    ]\n  }\n  if (scriptProperties.monthFormat == 2) {\n    months = [\n      'J' + newLine + 'A' + newLine + 'N',\n      'F' + newLine + 'E' + newLine + 'B',\n      'M' + newLine + 'A' + newLine + 'R',\n      'A' + newLine + 'P' + newLine + 'R',\n      'M' + newLine + 'A' + newLine + 'Y',\n      'J' + newLine + 'U' + newLine + 'N',\n      'J' + newLine + 'U' + newLine + 'L',\n      'A' + newLine + 'U' + newLine + 'G',\n      'S' + newLine + 'E' + newLine + 'P',\n      'O' + newLine + 'C' + newLine + 'T',\n      'N' + newLine + 'O' + newLine + 'V',\n      'D' + newLine + 'E' + newLine + 'C'\n    ]\n  }\n  if (scriptProperties.monthFormat == 3) {\n    months = [\n      'January',\n      'February',\n      'March',\n      'April',\n      'May',\n      'June',\n      'July',\n      'August',\n      'September',\n      'October',\n      'November',\n      'December'\n    ]\n  }\n  if (scriptProperties.dayFormat == 1) {\n    day = [\n      'S' + newLine + 'u' + newLine + 'n',\n      'M' + newLine + 'o' + newLine + 'n',\n      'T' + newLine + 'u' + newLine + 'e',\n      'W' + newLine + 'e' + newLine + 'd',\n      'T' + newLine + 'h' + newLine + 'u',\n      'F' + newLine + 'r' + newLine + 'i',\n      'S' + newLine + 'a' + newLine + 't'\n    ]\n  }\n  if (scriptProperties.dayFormat == 2) {\n    day = [\n      'Sunday',\n      'Monday',\n      'Tuesday',\n      'Wednesday',\n      'Thursday',\n      'Friday',\n      'Saturday'\n    ]\n  }\n  if (scriptProperties.alignVertical == true || scriptProperties.alignVertical == false) {\n    dtt = [\n      '',\n      '0' + newLine + '1',\n      '0' + newLine + '2',\n      '0' + newLine + '3',\n      '0' + newLine + '4',\n      '0' + newLine + '5',\n      '0' + newLine + '6',\n      '0' + newLine + '7',\n      '0' + newLine + '8',\n      '0' + newLine + '9',\n      '1' + newLine + '0',\n      '1' + newLine + '1',\n      '1' + newLine + '2',\n      '1' + newLine + '3',\n      '1' + newLine + '4',\n      '1' + newLine + '5',\n      '1' + newLine + '6',\n      '1' + newLine + '7',\n      '1' + newLine + '8',\n      '1' + newLine + '9',\n      '2' + newLine + '0',\n      '2' + newLine + '1',\n      '2' + newLine + '2',\n      '2' + newLine + '3',\n      '2' + newLine + '4',\n      '2' + newLine + '5',\n      '2' + newLine + '6',\n      '2' + newLine + '7',\n      '2' + newLine + '8',\n      '2' + newLine + '9',\n      '3' + newLine + '0',\n      '3' + newLine + '1'\n    ]\n  }\n\n  let date = new Date(); {\n    var yearold = date.getFullYear() + \"\"\n    if (scriptProperties.alignVertical == true || scriptProperties.alignVertical == false) {\n      var yearnew = yearold.split('');\n      year = yearnew[0] + newLine + yearnew[1] + newLine + yearnew[2] + newLine + yearnew[3];\n    }\n    if (scriptProperties.showDay == true) {\n      return day[date.getDay()] + delimiterValue + dtt[date.getDate()] + delimiterValue + months[date.getMonth()] + delimiterValue + year;\n    }\n    if (scriptProperties.showDay == false) {\n      return dtt[date.getDate()] + delimiterValue + months[date.getMonth()] + delimiterValue + year;\n    }\n  }\n}\n",
+				"scriptproperties" : 
+				{
+					"addDelimiter" : "",
+					"alignVertical" : true,
+					"dayFormat" : "1",
+					"monthFormat" : "2",
+					"showDay" : false,
+					"useDelimiter" : false
+				},
+				"value" : "1\n5\n\nN\nO\nV\n\n2\n0\n2\n3"
+			},
+			"verticalalign" : "center"
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.01036",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 6.2399998,
+			"castshadow" : false,
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3184554659/blurprecise/effect.json",
+					"id" : 61061,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 61062
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 61063
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/nasalization-rg.otf",
+			"horizontalalign" : "center",
+			"id" : 61059,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "-6.35487 -309.55267 0.00000",
+			"padding" : 32,
+			"parent" : 61067,
+			"pointsize" : 30.0,
+			"scale" : "0.29269 0.30769 0.34972",
+			"size" : "404.00000 213.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3184554659';\n// Please note: Do not remove this line or asset references may break.\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : true
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "clocks"
+				},
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.01036",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 6.2399998,
+			"castshadow" : false,
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3184554659/blurprecise/effect.json",
+					"id" : 5509,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 5510
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 5511
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/nasalization-rg.otf",
+			"horizontalalign" : "center",
+			"id" : 5508,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "-6.35487 -309.55267 0.00000",
+			"padding" : 32,
+			"parent" : 61067,
+			"pointsize" : 30.0,
+			"scale" : "0.29269 0.30769 0.34972",
+			"size" : "404.00000 213.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3184554659';\n// Please note: Do not remove this line or asset references may break.\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : false
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "clocks"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alpha" : 
+			{
+				"animation" : 
+				{
+					"c0" : 
+					[
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 0,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 45,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 1
+						},
+						{
+							"back" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : -1,
+								"y" : -0.0
+							},
+							"frame" : 90,
+							"front" : 
+							{
+								"enabled" : true,
+								"magic" : true,
+								"x" : 1,
+								"y" : 0
+							},
+							"lockangle" : true,
+							"locklength" : true,
+							"value" : 0
+						}
+					],
+					"options" : 
+					{
+						"fps" : 30,
+						"length" : 90,
+						"mode" : "single",
+						"wraploop" : null
+					}
+				},
+				"value" : 1.0
+			},
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"depthtest" : "enabled",
+			"font" : "fonts/airstrikelaser.ttf",
+			"horizontalalign" : "center",
+			"id" : 6867,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "",
+			"opaquebackground" : false,
+			"origin" : "1920.00000 1136.29626 0.00000",
+			"padding" : 32,
+			"pointsize" : 50.0,
+			"size" : "1148.00000 182.00000",
+			"text" : "NorthWay",
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "intro",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3200298808/Simple_Audio_Bars/effect.json",
+					"id" : 14303,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"SHAPE" : 7
+							},
+							"constantshadervalues" : 
+							{
+								"Bar Color" : "1 1 1",
+								"Bar Count" : 3,
+								"Bar Spacing" : 0.60000002,
+								"Lower/Upper Bar Bounds" : "0.0, 1.0",
+								"ui_editor_properties_opacity" : 1.0
+							},
+							"id" : 14304
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 14302,
+			"image" : "models/util/solidlayer.json",
+			"name" : "SoundBar",
+			"origin" : "478.03589 1453.09021 0.00000",
+			"size" : "70.00000 100.00000",
+			"visible" : 
+			{
+				"user" : "soundbar",
+				"value" : true
+			}
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blur/effect.json",
+					"id" : 121,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"id" : 149
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "0.93 0.93"
+							},
+							"id" : 123
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "0.93 0.93"
+							},
+							"id" : 153
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"compositecolor" : "1 1 1"
+							},
+							"id" : 154,
+							"textures" : [ null, "gradient/blend_gradient", null ]
+						}
+					],
+					"visible" : 
+					{
+						"user" : "blur",
+						"value" : true
+					}
+				}
+			],
+			"id" : 118,
+			"image" : "models/util/fullscreenlayer.json",
+			"name" : "Couche de post-traitement",
+			"parallaxDepth" : "0.00000 0.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/depthparallax/effect.json",
+					"id" : 77,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"center" : 0.30000001,
+								"scale" : "1 1",
+								"sens" : 1.0
+							},
+							"id" : 78,
+							"textures" : [ null, "after-sunset-minimal-4k-zm-3840x2160bgbgbg_bg_fg_depth" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 48,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160bgbgbg_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x2160bgbgbg_bg_fg",
+			"origin" : "1348.50000 848.00000 0.00000",
+			"parallaxDepth" : "-0.20000 -0.20000",
+			"size" : "2697.00000 1322.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/depthparallax/effect.json",
+					"id" : 60,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"center" : 0.44999999,
+								"scale" : "1 1.19",
+								"sens" : 1.77
+							},
+							"id" : 61,
+							"textures" : [ null, "after-sunset-minimal-4k-zm-3840x2160bgbg_bg_fg_depth" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterripple/effect.json",
+					"id" : 17896,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"animationspeed" : 0.15000001,
+								"ratio" : 1.0,
+								"ripplestrength" : 0.039999999,
+								"scale" : 1.0,
+								"scrolldirection" : 0.015826549,
+								"scrollspeed" : 0.0
+							},
+							"id" : 17897,
+							"textures" : [ null, "masks/waterripple_mask_4301868f", "effects/waterripplenormal" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 43,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160bgbg_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x2160bgbg_bg_fg",
+			"origin" : "1920.00000 567.00000 0.00000",
+			"parallaxDepth" : "0.25000 0.25000",
+			"size" : "3840.00000 1134.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 25847,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.66000003,
+								"power" : 1.12,
+								"ratio" : 0.19,
+								"scale" : 0.050000001,
+								"scrolldirection" : -0.053042207,
+								"speeduv" : 3.8299999,
+								"strength" : 0.40000001
+							},
+							"id" : 25848
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 38,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160bg_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x2160bg_bg_fg",
+			"origin" : "1824.50000 241.50000 0.00000",
+			"parallaxDepth" : "0.51000 0.51000",
+			"size" : "2857.00000 483.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 47801,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 47802
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 25,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160_bg_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x2160_bg_fg",
+			"origin" : "1839.00000 499.50000 0.00000",
+			"parallaxDepth" : "1.04000 1.04000",
+			"size" : "2750.00000 991.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 48377,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.63999999,
+								"power" : 1,
+								"ratio" : 1.03,
+								"scale" : 0.059999999,
+								"scrolldirection" : 0.63216692,
+								"speeduv" : 3.6500001,
+								"strength" : 0.54000002
+							},
+							"id" : 48378,
+							"textures" : [ null, "masks/foliagesway_mask_b3b7b6cf", null ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 21,
+			"image" : "models/after-sunset-minimal-4k-zm-3840x2160_fg.json",
+			"locktransforms" : true,
+			"name" : "after-sunset-minimal-4k-zm-3840x2160_fg",
+			"origin" : "1920.00000 870.50000 0.00000",
+			"parallaxDepth" : "1.32000 1.32000",
+			"size" : "3840.00000 1741.00000"
+		},
+		{
+			"id" : 593,
+			"instanceoverride" : 
+			{
+				"id" : 595,
+				"rate" : 0.47999999
+			},
+			"name" : "FireFly",
+			"origin" : "1973.68530 -532.97833 0.00000",
+			"parallaxDepth" : "1.32000 1.32000",
+			"particle" : "particles/workshop/2562725207/Star_06.json",
+			"scale" : "1.13328 1.13328 1.13328",
+			"visible" : 
+			{
+				"user" : "firefly",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 0.0,
+			"castshadow" : false,
+			"id" : 996,
+			"image" : "models/util/solidlayer.json",
+			"name" : "Media Info (ROUND)",
+			"origin" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'isMovable',\n        label: 'Is movable',\n        value: false\n    })\n    .finish();\n\nconst storageName = \"storedPosMICRounded\";\nlet isDragging = false;\nlet dragOffset;\n\nexport function cursorDown(event) {\n    isDragging = true;\n    dragOffset = thisLayer.origin.subtract(event.worldPosition);\n}\n\nexport function cursorUp(event) {\n    isDragging = false;\n    localStorage.set(storageName, thisLayer.origin);\n}\n\nexport function cursorMove(event) {\n    if (isDragging && scriptProperties.isMovable) {\n        thisLayer.origin = event.worldPosition.add(dragOffset);\n    }\n}\n\nexport function init() {\n    return localStorage.get(storageName) || thisLayer.origin;\n} \n",
+				"scriptproperties" : 
+				{
+					"isMovable" : true
+				},
+				"value" : "3382.42920 1829.68970 0.00000"
+			},
+			"scale" : 
+			{
+				"user" : "scale",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "512.00000 512.00000",
+			"visible" : 
+			{
+				"user" : "musicplayer",
+				"value" : false
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+				"value" : "0.48235 0.12941 0.12941"
+			},
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3219510589/opacity/effect.json",
+					"id" : 998,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1
+							},
+							"id" : 0,
+							"textures" : [ null, "workshop/3219510589/opacitymap1" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 997,
+			"image" : "models/util/solidlayer.json",
+			"name" : "Holder (hide before publish)",
+			"parent" : 996,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: false\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 1, 1); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+				"scriptproperties" : 
+				{
+					"fadeInDur" : 0.25,
+					"fadeOutDur" : 0.2,
+					"invert" : false,
+					"max" : 0.44999999,
+					"media" : true,
+					"min" : 0.2,
+					"timerIn" : 0.050000001,
+					"timerOut" : 1.25
+				},
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "512.00000 512.00000",
+			"visible" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n/**\n * @param {MediaPlaybackEvent} event\n */\nexport function mediaPlaybackChanged(event) {\n\tthisLayer.visible = event.state !== MediaPlaybackEvent.PLAYBACK_STOPPED;\n}\n",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+				"value" : "0.48235 0.12941 0.12941"
+			},
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3219510589/opacity/effect.json",
+					"id" : 1004,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 1005,
+							"textures" : [ null, "workshop/3219510589/opacitymap" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1001,
+			"image" : "models/util/solidlayer.json",
+			"name" : "Text Container",
+			"parent" : 997,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media based detection',\n        value: false\n    })\n    .addCheckbox({\n\t\tname: 'invert',\n\t\tlabel: 'Invert',\n\t\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerSwitch',\n        label: 'Flip timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'switchDur',\n        label: 'Flip duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 0, 0); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout, pos, oldPos;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n        oldState = state;\n        target = state ? scriptProperties.max : scriptProperties.min;\n        target = oldPos ? target : -target;\n        return target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n    }\n\n    pos = thisLayer.getTransformMatrix().m[12] > engine.canvasSize.x / 2;\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state || pos != oldPos){\n        if (stopTimeout) stopTimeout();\n        const flip = oldState == state;\n        oldState = state;\n        \n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur, flip)}, (flip ? scriptProperties.timerSwitch : scriptProperties.timerIn) * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur, flip)}, (flip ? scriptProperties.timerSwitch : scriptProperties.timerOut) * 1000);\n    }\n\n    oldPos = pos;\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur, flip) {\n    target = pos ? targ : -targ;\n    target = isVector ? new Vec3(target) : target;\n\tdur = engine.frametime / Math.max(0.0001, flip ? scriptProperties.switchDur : fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = WEMath.mix(a.x, b.x, value.x);\n        const y = WEMath.mix(a.y, b.y, value.y);\n        const z = WEMath.mix(a.z, b.z, value.z);\n        return new Vec3(x, y, z);\n    }\n    return WEMath.mix(a, b, value);\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n    oldPos = thisLayer.getTransformMatrix().m[12] > engine.canvasSize.x / 2;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+				"scriptproperties" : 
+				{
+					"fadeInDur" : 0.155,
+					"fadeOutDur" : 0.2,
+					"invert" : false,
+					"max" : 1,
+					"media" : true,
+					"min" : 0,
+					"switchDur" : 0.155,
+					"timerIn" : 0.5,
+					"timerOut" : 0.5,
+					"timerSwitch" : 0.079999998
+				},
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "512.00000 512.00000"
+		},
+		{
+			"alignment" : "right",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+				"value" : "0.48235 0.12941 0.12941"
+			},
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3219510589/tint/effect.json",
+					"id" : 1010,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: false\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 1, 1); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+									"scriptproperties" : 
+									{
+										"fadeInDur" : 0.155,
+										"fadeOutDur" : 0.2,
+										"invert" : false,
+										"max" : 0.36000001,
+										"media" : true,
+										"min" : 0,
+										"timerIn" : 0.5,
+										"timerOut" : 0.5
+									},
+									"value" : 0.36000001
+								},
+								"color" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.tertiaryColor;\n}\n",
+									"value" : "0.00000 0.00000 0.00000"
+								}
+							},
+							"id" : 1011,
+							"textures" : [ null, "workshop/3219510589/text_viss0" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1007,
+			"image" : "models/util/solidlayer.json",
+			"name" : "Background",
+			"origin" : "-214.00000 0.00000 0.00000",
+			"parent" : 1001,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nconst border = 0; //in layer pixels (42)\nlet artist = \"Artist Name O\", song = \"Song Title O\", initScale, pixelSize;\n\nexport function update(value) {\n    const width = Math.max(artist.size.x * Math.abs(artist.scale.x), song.size.x * Math.abs(song.scale.x));\n    value.x = width / (thisLayer.size.x * initScale.x) * initScale.x + pixelSize * border;\n    return value;\n}\n\nexport function init(value) {\n    artist = thisScene.getLayer(artist);\n    song = thisScene.getLayer(song);\n    initScale = value;\n    pixelSize = initScale.x / thisLayer.size.x;\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "1160.00000 512.00000"
+		},
+		{
+			"alignment" : "right",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+				"value" : "0.48235 0.12941 0.12941"
+			},
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3219510589/tint/effect.json",
+					"id" : 1016,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: false\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 1, 1); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+									"scriptproperties" : 
+									{
+										"fadeInDur" : 0.155,
+										"fadeOutDur" : 0.2,
+										"invert" : false,
+										"max" : 0.36000001,
+										"media" : true,
+										"min" : 0,
+										"timerIn" : 0.5,
+										"timerOut" : 0.5
+									},
+									"value" : 0.36000001
+								},
+								"color" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.tertiaryColor;\n}\n",
+									"value" : "0.00000 0.00000 0.00000"
+								}
+							},
+							"id" : 1017
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/3219510589/opacity/effect.json",
+					"id" : 1018,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 1019,
+							"textures" : [ null, "workshop/3219510589/2334" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1013,
+			"image" : "models/util/solidlayer.json",
+			"name" : "Rounded Corners",
+			"origin" : "-1160.00000 0.00000 0.00000",
+			"parent" : 1007,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nlet initValue, parent, initParent;\n\nexport function update(value) {\n    value.x = initValue.x / Math.max(0.001, parent.scale.x) * initParent.x;\n    return value;\n}\n\nexport function init(value) {\n    parent = thisLayer.getParent();\n    initParent = parent.scale;\n    initValue = value;\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "85.00000 512.00000"
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.43922 0.00000 0.74902",
+			"blockalign" : false,
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.textColor;\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"font" : "fonts/workshop/3219510589/LEMONMILK-Bold.otf",
+			"horizontalalign" : "right",
+			"id" : 1022,
+			"limitrows" : true,
+			"limituseellipsis" : false,
+			"limitwidth" : true,
+			"maxrows" : 1,
+			"maxwidth" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// This script was actually made by seekay XD\n\nlet mediaInfo = \"Media Info (ROUND)\";\n\nexport function init(value)\n{\n    mediaInfo = thisScene.getLayer(mediaInfo);\n}\n\nexport function update(value) {\n    if (thisLayer.scale.x < 0) {\n    value = engine.canvasSize.x * (1 - 0.1 * mediaInfo.scale.x) - mediaInfo.origin.x;\n    }\n    else {\n    value = mediaInfo.origin.x - ((engine.canvasSize.x*0.1)*mediaInfo.scale.x);\n  }\n    return value / mediaInfo.scale.x;\n}\n",
+				"value" : 1200.0
+			},
+			"name" : "Artist Name O",
+			"opaquebackground" : false,
+			"origin" : "-266.00000 -6.00000 0.00000",
+			"padding" : 0,
+			"parent" : 1001,
+			"pointsize" : 38.0,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nlet initValue, parent;\n\nexport function update(value) {\n    value.x = Math.sign(parent.scale.x) * initValue.x;\n    thisLayer.horizontalalign = value.x > 0 ? \"right\" : \"left\";\n    return value;\n}\n\nexport function init(value) {\n    initValue = value;\n    parent = thisLayer.getParent();\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "1166.00000 214.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.artist;\n}\n",
+				"value" : "Artist Name\nTHIS LAYER NAME HAS TO BE UNIQUE"
+			},
+			"verticalalign" : "bottom"
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.43922 0.00000 0.74902",
+			"blockalign" : false,
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.textColor;\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"font" : "fonts/workshop/3219510589/LEMONMILK-Light.otf",
+			"horizontalalign" : "right",
+			"id" : 1023,
+			"limitrows" : true,
+			"limituseellipsis" : false,
+			"limitwidth" : true,
+			"maxrows" : 1,
+			"maxwidth" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// This script was actually made by seekay XD\n\nlet mediaInfo = \"Media Info (ROUND)\";\n\nexport function init(value)\n{\n    mediaInfo = thisScene.getLayer(mediaInfo);\n}\n\nexport function update(value) {\n    if (thisLayer.scale.x < 0) {\n    value = engine.canvasSize.x * (1 - 0.1 * mediaInfo.scale.x) - mediaInfo.origin.x;\n    }\n    else {\n    value = mediaInfo.origin.x - ((engine.canvasSize.x*0.1)*mediaInfo.scale.x);\n  }\n    return value / mediaInfo.scale.x;\n}\n",
+				"value" : 1200.0
+			},
+			"name" : "Song Title O",
+			"opaquebackground" : false,
+			"origin" : "-266.00000 -2.00000 0.00000",
+			"padding" : 0,
+			"parent" : 1001,
+			"pointsize" : 32.0,
+			"scale" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nlet initValue, parent;\n\nexport function update(value) {\n    value.x = Math.sign(parent.scale.x) * initValue.x;\n    thisLayer.horizontalalign = value.x > 0 ? \"right\" : \"left\";\n    return value;\n}\n\nexport function init(value) {\n    initValue = value;\n    parent = thisLayer.getParent();\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"size" : "908.00000 180.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nvar mediaData = \"\";\n\n/**\n * @param {String} value - for property 'text'\n * @return {String} - update current property value\n */\nexport function update(value) {\n\treturn mediaData;\n}\n\n/**\n * @param {MediaPropertiesEvent} event\n */\nexport function mediaPropertiesChanged(event) {\n\tmediaData = event.title;\n}\n",
+				"value" : "Artist Name\nTHIS LAYER NAME HAS TO BE UNIQUE"
+			},
+			"verticalalign" : "top"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+				"value" : "0.48235 0.12941 0.12941"
+			},
+			"id" : 1024,
+			"image" : "models/workshop/3219510589/corner5.json",
+			"name" : "Clock Container",
+			"origin" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: true\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: true\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 1.25,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 0,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.25,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.075,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(0, 1, 0); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+				"scriptproperties" : 
+				{
+					"fadeInDur" : 0.075000003,
+					"fadeOutDur" : 0.25,
+					"invert" : false,
+					"max" : 0,
+					"media" : true,
+					"min" : -154,
+					"timerIn" : 0,
+					"timerOut" : 1.25
+				},
+				"value" : "0.00000 -154.00000 0.00000"
+			},
+			"parent" : 997,
+			"size" : "512.00000 512.00000",
+			"visible" : false
+		},
+		{
+			"anchor" : "none",
+			"angles" : "0.00000 -0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.textColor;\n}\n",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"font" : "fonts/workshop/3219510589/LEMONMILK-Bold.otf",
+			"horizontalalign" : "center",
+			"id" : 1025,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "0.00000 -146.00000 0.00000",
+			"padding" : 32,
+			"parent" : 1024,
+			"pointsize" : 32.0,
+			"size" : "373.00000 180.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : true
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : false
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/3219510589/blendgradient/effect.json",
+					"id" : 1028,
+					"name" : "Media Transition",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"WRITEALPHA" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 1,
+								"gradientscale" : 0.34999999,
+								"multiply" : 
+								{
+									"animation" : 
+									{
+										"c0" : 
+										[
+											{
+												"back" : 
+												{
+													"enabled" : false,
+													"x" : -1,
+													"y" : -0.0
+												},
+												"frame" : 0,
+												"front" : 
+												{
+													"enabled" : false,
+													"x" : 0.51111108,
+													"y" : 0
+												},
+												"lockangle" : true,
+												"locklength" : true,
+												"value" : 1
+											},
+											{
+												"back" : 
+												{
+													"enabled" : false,
+													"x" : -0.51111108,
+													"y" : -0.0
+												},
+												"frame" : 38,
+												"front" : 
+												{
+													"enabled" : false,
+													"x" : 1,
+													"y" : 0
+												},
+												"lockangle" : true,
+												"locklength" : true,
+												"value" : 0
+											}
+										],
+										"options" : 
+										{
+											"fps" : 30,
+											"length" : 45,
+											"mode" : "single",
+											"wraploop" : null
+										}
+									},
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\tthisObject.getAnimation().play();\n}\n",
+									"value" : 0
+								}
+							},
+							"id" : 1029,
+							"textures" : [ null, "util/black", null ],
+							"usertextures" : 
+							[
+								null,
+								{
+									"name" : "$mediaPreviousThumbnail",
+									"type" : "system"
+								}
+							]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/3219510589/tint/effect.json",
+					"id" : 1031,
+					"name" : "HUE",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 26
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: false\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 1, 1); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+									"scriptproperties" : 
+									{
+										"fadeInDur" : 0.34999999,
+										"fadeOutDur" : 0.25,
+										"invert" : true,
+										"max" : 1,
+										"media" : true,
+										"min" : 0,
+										"timerIn" : 1.5,
+										"timerOut" : 0.050000001
+									},
+									"value" : 1
+								},
+								"color" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\n// Adjust this constant to change the duration of the transition\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.primaryColor;\n}\n",
+									"value" : "0.48235 0.12941 0.12941"
+								}
+							},
+							"id" : 1032
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/3219510589/tint/effect.json",
+					"id" : 1033,
+					"name" : "SATURATION",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 27
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 
+								{
+									"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nimport * as WEMath from 'WEMath';\n\nexport var scriptProperties = createScriptProperties()\n    .addCheckbox({\n        name: 'media',\n        label: 'Media Based Detection',\n        value: false\n    })\n    .addCheckbox({\n\tname: 'invert',\n\tlabel: 'Invert',\n\tvalue: false\n\t})\n    .addSlider({\n        name: 'min',\n        label: 'Min value',\n        value: 0,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'max',\n        label: 'Max value',\n        value: 1,\n        min: 0,\n        max: 1,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerIn',\n        label: 'Fade in timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'timerOut',\n        label: 'Fade out timer',\n        value: 2,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeInDur',\n        label: 'Fade in duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .addSlider({\n        name: 'fadeOutDur',\n        label: 'Fade out duration',\n        value: 0.5,\n        min: 0,\n        max: 2,\n        integer: false\n    })\n    .finish();\n\nconst vecToggles = new Vec3(1, 1, 1); //1 enabled, 0 disabled\nconst audioBuffer = engine.registerAudioBuffers(16);\nlet state, oldState, target, dur = 0, isVector, stopTimeout;\n\nexport function update(value) {\n\tif (oldState == undefined) {\n\t\toldState = state;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n\t\treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n\n    if (!scriptProperties.media) state = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\n    if (oldState != state){\n        oldState = state;\n\n        if (stopTimeout) stopTimeout();\n        if (state) stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.max, scriptProperties.fadeInDur)}, scriptProperties.timerIn * 1000);\n        else stopTimeout = engine.setTimeout(() => {setTarget(scriptProperties.min, scriptProperties.fadeOutDur)}, scriptProperties.timerOut * 1000);\n    }\n\n    return lerp(value, target, dur);\n}\n\nfunction setTarget(targ, fadeDur) {\n    target = isVector ? new Vec3(targ) : targ;\n\tdur = engine.frametime / Math.max(0.0001, fadeDur);\n    dur = isVector ? vecToggles.multiply(dur) : dur;\n}\n\nfunction lerp(a, b, value) {\n    if (isVector) {\n        const x = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.x, b.x, value.x), scriptProperties.max));\n        const y = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.y, b.y, value.y), scriptProperties.max));\n        const z = Math.max(scriptProperties.min, Math.min(WEMath.mix(a.z, b.z, value.z), scriptProperties.max));\n        return new Vec3(x, y, z);\n    }\n    return Math.max(scriptProperties.min, Math.min(WEMath.mix(a, b, value), scriptProperties.max));\n}\n\nexport function init(value) {\n\tisVector = value.hasOwnProperty(\"x\");\n\tdur = isVector ? new Vec3(dur) : dur;\n\n    if (!scriptProperties.media) {\n\t\tstate = !!audioBuffer.average.reduce((a, b) => a + b) ^ scriptProperties.invert;\n\t\ttarget = state ? scriptProperties.max : scriptProperties.min;\n    \treturn target = isVector ? lerp(value, new Vec3(target), vecToggles) : target;\n\t}\n}\n\nexport function mediaPlaybackChanged(event) {\n    if (scriptProperties.media) state = event.state == 1 ^ scriptProperties.invert;\n}\n",
+									"scriptproperties" : 
+									{
+										"fadeInDur" : 0.34999999,
+										"fadeOutDur" : 0.25,
+										"invert" : true,
+										"max" : 0.34999999,
+										"media" : true,
+										"min" : 0,
+										"timerIn" : 1.5,
+										"timerOut" : 0.050000001
+									},
+									"value" : 1
+								},
+								"color" : "0.00000 0.00000 0.00000"
+							},
+							"id" : 1034
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/3219510589/opacity/effect.json",
+					"id" : 1035,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1
+							},
+							"id" : 1036,
+							"textures" : [ null, "workshop/3219510589/opacitymap1" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1026,
+			"image" : "models/workshop/3219510589/solid_instance_model_b5d59996.json",
+			"instance" : 
+			{
+				"combos" : 
+				{
+					"version" : 2
+				},
+				"id" : 1027,
+				"textures" : [ "util/white" ],
+				"usertextures" : 
+				[
+					{
+						"name" : "$mediaThumbnail",
+						"type" : "system"
+					}
+				]
+			},
+			"name" : "Album Cover",
+			"parent" : 997,
+			"size" : "464.00000 464.00000"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"castshadow" : false,
+			"color" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '3219510589';\n\nconst DURATION = 1;\n\nlet newColor = new Vec3(0, 0, 0);\nlet oldColor = new Vec3(0, 0, 0);\nlet timer = DURATION;\n\n/**\n * @param {Vec3} value - for property 'clearcolor'\n * @return {Vec3} - update current property value\n */\nexport function update() {\n\tvar color = newColor;\n\tif (timer < DURATION) {\n\t\tcolor = newColor.subtract(oldColor).multiply(timer / DURATION).add(oldColor);\n\t\ttimer += engine.frametime;\n\t}\n\treturn color;\n}\n\n/**\n * @param {MediaThumbnailEvent} event\n */\nexport function mediaThumbnailChanged(event) {\n\ttimer = 0;\n\toldColor = newColor;\n\tnewColor = event.tertiaryColor;\n}\n",
+				"value" : "0.00000 0.00000 0.00000"
+			},
+			"id" : 1039,
+			"image" : "models/workshop/3219510589/freem.json",
+			"name" : "Frame",
+			"parent" : 997,
+			"size" : "470.00000 470.00000"
+		},
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2795521260/color_grading/effect.json",
+					"id" : 266,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"Brightness" : 
+								{
+									"animation" : 
+									{
+										"c0" : 
+										[
+											{
+												"back" : 
+												{
+													"enabled" : true,
+													"magic" : true,
+													"x" : -1,
+													"y" : -0.0
+												},
+												"frame" : 0,
+												"front" : 
+												{
+													"enabled" : true,
+													"magic" : true,
+													"x" : 0.50333333,
+													"y" : 0
+												},
+												"lockangle" : true,
+												"locklength" : true,
+												"value" : -1
+											},
+											{
+												"back" : 
+												{
+													"enabled" : true,
+													"magic" : true,
+													"x" : -0.50333333,
+													"y" : -0.0
+												},
+												"frame" : 150,
+												"front" : 
+												{
+													"enabled" : true,
+													"magic" : true,
+													"x" : 1,
+													"y" : 0
+												},
+												"lockangle" : true,
+												"locklength" : true,
+												"value" : 0
+											}
+										],
+										"options" : 
+										{
+											"fps" : 30,
+											"length" : 150,
+											"mode" : "single",
+											"wraploop" : null
+										}
+									},
+									"value" : 0.0
+								},
+								"Channel influence" : "1 1 1",
+								"Contrast" : 0.0,
+								"Opacity" : 1.0
+							},
+							"id" : 267
+						}
+					],
+					"visible" : 
+					{
+						"user" : "intro",
+						"value" : true
+					}
+				}
+			],
+			"id" : 238,
+			"image" : "models/util/fullscreenlayer.json",
+			"name" : "Couche de post-traitement",
+			"parallaxDepth" : "0.00000 0.00000"
+		}
+	],
+	"version" : 3
+}

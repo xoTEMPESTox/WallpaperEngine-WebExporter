@@ -1,0 +1,94 @@
+{
+	"camera" : 
+	{
+		"center" : "0.000 0.000 -1.000",
+		"eye" : "0.000 0.000 0.000",
+		"up" : "0.000 1.000 0.000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.3 0.3 0.3",
+		"bloom" : false,
+		"bloomstrength" : null,
+		"bloomthreshold" : null,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.10000000149011612,
+		"cameraparallaxmouseinfluence" : 0,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1,
+		"camerashakespeed" : 3,
+		"clearcolor" : "0.7 0.7 0.7",
+		"clearenabled" : null,
+		"orthogonalprojection" : 
+		{
+			"height" : 1334,
+			"width" : 2372
+		},
+		"skylightcolor" : "0.3 0.3 0.3"
+	},
+	"objects" : 
+	[
+		{
+			"angles" : "0.000 0.000 0.000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/reflection/effect.json",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"Additive" : 0.50999999046325684,
+								"ui_editor_properties_direction" : -0.029999999329447746,
+								"ui_editor_properties_offset" : -0.60000002384185791
+							},
+							"textures" : 
+							[
+								null,
+								"masks/reflection_mask_ee0d9bbc6d0516b8583c8fb3e841485c0b7ec4e8"
+							]
+						}
+					]
+				},
+				{
+					"file" : "effects/waterripple/effect.json",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"ui_editor_properties_animation_speed" : 0.10000006109476089,
+								"ui_editor_properties_ratio" : 3.0,
+								"ui_editor_properties_ripple_scale" : 2.0,
+								"ui_editor_properties_ripple_strength" : 0.10000000149011612,
+								"ui_editor_properties_scroll_direction" : 5.0,
+								"ui_editor_properties_scroll_speed" : 0.10000000149011612
+							},
+							"textures" : 
+							[
+								null,
+								"effects/waterripplenormal",
+								"masks/waterripple_mask_681d95af21112ea41fc4cd51aa49d9c553ef1173"
+							]
+						}
+					]
+				}
+			],
+			"id" : 12,
+			"image" : "models/cabin.json",
+			"name" : "cabin",
+			"origin" : "1186.000 667.000 0.000",
+			"parallaxDepth" : "1.000 1.000",
+			"scale" : "1.000 1.000 1.000",
+			"size" : "2372.000 1334.000",
+			"visible" : true
+		}
+	]
+}

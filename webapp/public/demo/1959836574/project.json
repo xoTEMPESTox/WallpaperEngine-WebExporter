@@ -1,0 +1,401 @@
+{
+    "projectInfo": {
+        "name": "Untitled",
+        "id": "1959836574",
+        "file": null,
+        "preview": null
+    },
+    "assets": {
+        "images": {},
+        "videos": {},
+        "models": {}
+    },
+    "layers": [
+        {
+            "name": "Light shafts 0",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 0.2,
+                "lifetime": 14.0,
+                "velocity": {
+                    "x": 20.0,
+                    "y": 10.0
+                },
+                "color": "#6d925ba413ec",
+                "size": 925.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1145.664,
+                    495.59,
+                    0.0
+                ],
+                "scale": [
+                    7.785,
+                    2.711,
+                    1.167
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Fog 1",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1.5,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 52.5,
+                    "y": 0.0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 1600.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2005.959,
+                    788.39,
+                    0.0
+                ],
+                "scale": [
+                    1.935,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Fog 1",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 4.0,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#fe01fe01fe01",
+                "size": 1700.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1883.398,
+                    1292.232,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Leaves 1",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 72.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2829.364,
+                    1403.119,
+                    0.0
+                ],
+                "scale": [
+                    0.505,
+                    0.505,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Leaves 1",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 72.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1125.132,
+                    1556.817,
+                    0.0
+                ],
+                "scale": [
+                    0.505,
+                    0.505,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 72.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2838.723,
+                    592.809,
+                    0.0
+                ],
+                "scale": [
+                    0.594,
+                    0.504,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Leaves 2",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 72.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    1054.802,
+                    619.31,
+                    0.0
+                ],
+                "scale": [
+                    0.594,
+                    0.504,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Leaves 4",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 9.0,
+                "velocity": {
+                    "x": -75.0,
+                    "y": -57.5
+                },
+                "color": "#fe01fe01fe01",
+                "size": 72.5,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    2084.565,
+                    1329.021,
+                    0.0
+                ],
+                "scale": [
+                    0.567,
+                    0.562,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Magic sparkle",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 0.35,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#6d925ba413ec",
+                "size": 750.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3351.177,
+                    1970.402,
+                    0.0
+                ],
+                "scale": [
+                    0.3,
+                    0.3,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Magic sparkle",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 5,
+                "lifetime": 0.35,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#6d925ba413ec",
+                "size": 750.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3387.504,
+                    1969.593,
+                    0.0
+                ],
+                "scale": [
+                    0.3,
+                    0.3,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        },
+        {
+            "name": "Fireflies",
+            "type": "particles",
+            "particleSettings": {
+                "emissionRate": 1,
+                "lifetime": 11.5,
+                "velocity": {
+                    "x": 0,
+                    "y": 0
+                },
+                "color": "#8778fe014fb0",
+                "size": 80.0,
+                "spread": 0
+            },
+            "transform": {
+                "position": [
+                    3530.349,
+                    1220.329,
+                    0.0
+                ],
+                "scale": [
+                    0.778,
+                    1.0,
+                    1.0
+                ],
+                "rotation": 0
+            },
+            "effects": [
+                {
+                    "name": "parallax",
+                    "intensity": 1.0,
+                    "depth": 1.0
+                }
+            ]
+        }
+    ],
+    "userProperties": {}
+}

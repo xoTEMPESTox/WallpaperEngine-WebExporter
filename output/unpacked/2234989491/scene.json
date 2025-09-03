@@ -1,0 +1,339 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : false,
+		"bloomhdrfeather" : 0.10000000149011612,
+		"bloomhdrscatter" : 1.6189999580383301,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 2.0,
+		"bloomthreshold" : 0.64999997615814209,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.10000000149011612,
+		"cameraparallaxmouseinfluence" : 0.0,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : false,
+		"nearz" : 0.0099999997764825821,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 13,
+			"image" : "models/Wallpaper.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Wallpaper",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.00000 1.00000 1.00000",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true,
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 76,
+			"image" : "models/Untitled-1.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "shape",
+			"origin" : "2259.68604 1550.37195 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "1.30000 1.30000 1.00000",
+			"size" : "572.00000 258.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "showclock",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "0.07500 0.07500 0.07500",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/Atami-Regular.otf",
+			"horizontalalign" : "center",
+			"id" : 18,
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "2330.00000 1630.00000 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"pointsize" : 
+			{
+				"user" : "clocksize",
+				"value" : 30.0
+			},
+			"scale" : "1.20000 1.20000 1.00000",
+			"size" : "2.00000 2.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : 
+					{
+						"user" : "delimeter",
+						"value" : ":"
+					},
+					"showSeconds" : 
+					{
+						"user" : "show_second",
+						"value" : true
+					},
+					"use24hFormat" : 
+					{
+						"user" : "_12",
+						"value" : true
+					}
+				},
+				"value" : ""
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showclock",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/Alcubierre.otf",
+			"horizontalalign" : "right",
+			"id" : 80,
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Day",
+			"opaquebackground" : false,
+			"origin" : "1905.89600 1616.50403 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"pointsize" : 
+			{
+				"user" : "datasize",
+				"value" : 32.0
+			},
+			"scale" : "2.00000 2.00000 1.00000",
+			"size" : "2.00000 2.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tconst currentDay = [\"Sun\",\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\"][new Date().getDay()];\n\treturn currentDay;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : true
+				},
+				"value" : ""
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showclock",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.00000",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "systemfont_consolas",
+			"horizontalalign" : "center",
+			"id" : 194,
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "Date",
+			"opaquebackground" : false,
+			"origin" : "2310.60205 1445.84497 0.00000",
+			"padding" : 32,
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"pointsize" : 
+			{
+				"user" : "datesize",
+				"value" : 31.0
+			},
+			"scale" : "0.50000 0.50000 1.00000",
+			"size" : "2.00000 2.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tconst months = [\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"];\n\tvalue = `${time.getDate()} ${months[time.getMonth()]} ${time.getFullYear()}`\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : true
+				},
+				"value" : ""
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showclock",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 200,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.30000001192092896,
+				"id" : 201,
+				"rate" : 0.5
+			},
+			"locktransforms" : true,
+			"name" : "Light shafts",
+			"origin" : "1179.70703 598.97498 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/presets/light_shafts_0.json",
+			"scale" : "19.21000 4.16300 1.00000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 187,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.60000002384185791,
+				"count" : 0.30000001192092896,
+				"id" : 188,
+				"rate" : 0.60000002384185791,
+				"speed" : 0.60000002384185791
+			},
+			"locktransforms" : true,
+			"name" : "Snow perspective",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/presets/snowperspective.json",
+			"scale" : "1.00000 1.00000 1.00000",
+			"visible" : true
+		},
+		{
+			"angles" : "0.00000 0.00000 0.00000",
+			"id" : 210,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.69999998807907104,
+				"id" : 211,
+				"rate" : 0.10000000149011612,
+				"speed" : 0.0
+			},
+			"locktransforms" : true,
+			"name" : "Fog",
+			"origin" : "1834.72803 417.07800 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"particle" : "particles/presets/fog2.json",
+			"scale" : "3.11800 1.00000 1.00000",
+			"visible" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 0.0,
+			"angles" : "0.00000 0.00000 0.00000",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 22,
+			"copybackground" : true,
+			"id" : 72,
+			"image" : "models/workshop/2079954552/bar.json",
+			"ledsource" : false,
+			"locktransforms" : true,
+			"name" : "bar set origin (x-15 y0)",
+			"origin" : "1027.36499 601.37500 0.00000",
+			"parallaxDepth" : "1.00000 1.00000",
+			"perspective" : false,
+			"scale" : "0.10000 0.10000 1.00000",
+			"size" : "4.00000 4.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n    .addSlider({\n        name: 'scale',\n        label: 'New Slider',\n        value: 6,\n        min: 0,\n        max: 10,\n        integer: false\n    })\n    .addCheckbox({\n        name: 'showEqualizer',\n        label: 'Show Equalizer',\n        value: true\n    })\n    .addSlider({\n        name: 'equalizerMultiplier',\n        label: 'Equalizer Multiplier',\n        value: 100,\n        min: 10,\n        max: 200,\n        integer: false\n    })\n    .finish();\nexport let __workshopId = '2079954552';\n\nvar bars = [];\nvar baseOrigin;\nvar baseAngle;\nlet audioData = engine.registerAudioBuffers(64);\n\n/**\n * @param {Boolean} value (for property 'visible')\n */\nexport function update() {\n    if (scriptProperties.showEqualizer) {\n        var origin = baseOrigin.copy();\n        var scale = new Vec3(scriptProperties.scale);/* edit this value for bar width, for horizontal 6 for vertical 3*/\n\n        for (var i = 0; i < 64; ++i) {\n            let amt = audioData.average[i];\n            let bar = bars[i];\n\n            scale.y = amt * scriptProperties.equalizerMultiplier;\n            origin.x += 30;/*edit this value for horizontal bar spacing, for horizontal bar 30 for vertical 0*/\n            origin.y += 0; /*edit this value for Vertical bar spacing, for Vertical bar 17 for horizontal 0 */\n            bar.scale = scale;\n            bar.origin = origin;\n        }\n    }\n}\n\n/**\n * @param {Boolean} value (for property 'visible')\n */\nexport function init() {\n    bars.push(thisLayer);\n    let thisIndex = thisScene.getLayerIndex(thisLayer);\n    for (var i = 1; i < 64; ++i) {\n        let newBar = thisScene.createLayer('models/workshop/2079954552/bar.json');\n        thisScene.sortLayer(newBar, thisIndex);\n        newBar.parallaxDepth = new Vec2(0, 0);\n        newBar.alpha = 0\n        bars.push(newBar);\n    }\n\n    for (var i = 0; i < 64; ++i) {\n        let angle = 360 * (i / 64);\n        let bar = bars[i];\n        bar.angles = new Vec3(0, 0, 0); /* this controls bar rotation, the 3rd value is the rotation to change, for horizontal bar 0 for vertical 90*/\n\n\n    }\n    baseOrigin = thisLayer.origin;\n\n}\n",
+				"scriptproperties" : 
+				{
+					"equalizerMultiplier" : 
+					{
+						"user" : "equalizermultiplier",
+						"value" : 100
+					},
+					"scale" : 0.20000000000000001,
+					"showEqualizer" : 
+					{
+						"user" : "showaudioequalizer",
+						"value" : true
+					}
+				},
+				"user" : "showaudioequalizer",
+				"value" : true
+			}
+		}
+	],
+	"version" : 0
+}

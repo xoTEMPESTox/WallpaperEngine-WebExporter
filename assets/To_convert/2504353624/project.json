@@ -1,0 +1,58 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "[h1] ---------------------------------[/h1]\n[b]🎨 Artwork by [url=https://www.artstation.com/andikoroveshi] Andrea Koroveshi[/url][/b]\n[b]🎵 [url=https://youtu.be/eAc4dTLvbRk] Music Source[/url][/b]\n[h1] ---------------------------------[/h1]\n[h1]Tags[/h1]\n[h1] ---------------------------------[/h1]\n- Forest\n- Sci-fi \n- Anime\n- Nature\n- Art\n- Minimalistic\n- Simple\n- Day\n- Night\n- Stars\n- Tree\n- Mountains\n- River\n- Moon\n- Music\n[h1] ---------------------------------[/h1]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"mouseinfluence" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "<b>Mouse Influence</b>",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.058823529411764705 0.0392156862745098 0.047058823529411764"
+			},
+			"timeofday" : 
+			{
+				"index" : 0,
+				"options" : 
+				[
+					{
+						"label" : "Day",
+						"value" : "2"
+					},
+					{
+						"label" : "Night",
+						"value" : "3"
+					},
+					{
+						"label" : "Automatic",
+						"value" : "4"
+					}
+				],
+				"order" : 100,
+				"text" : "<b>Version</b>",
+				"type" : "combo",
+				"value" : "4"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Fantasy" ],
+	"title" : "Sealed",
+	"type" : "scene",
+	"version" : 5,
+	"visibility" : "public",
+	"workshopid" : "2504353624",
+	"workshopurl" : "steam://url/CommunityFilePage/2504353624"
+}

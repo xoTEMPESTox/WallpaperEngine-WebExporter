@@ -1,0 +1,16 @@
+{
+  "bleedtransparentcolors": true,
+  "clampuvs": true,
+  "format": "rgba8888",
+  "nomip": "true",
+  "nointerpolation": "false",
+  "nonpoweroftwo": "true",
+  "spritesheetsequences": [
+    {
+      "duration": 1,
+      "frames": 49,
+      "width": 59,
+      "height": 162
+    }
+  ]
+}

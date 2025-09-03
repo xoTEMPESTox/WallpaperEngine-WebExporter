@@ -1,0 +1,1983 @@
+{
+	"camera" : 
+	{
+		"center" : "52.43388 154.26768 -1.00000",
+		"eye" : "52.43388 154.26768 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : 
+		{
+			"user" : "bloom",
+			"value" : false
+		},
+		"bloomhdrfeather" : 0.1,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 1.619,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 0.5,
+		"bloomthreshold" : 0.64999998,
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 3.0,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : false,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 2160,
+			"width" : 3840
+		},
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 904,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"multiply" : 
+								{
+									"script" : "'use strict';\n \nimport * as WEMath from 'WEMath';\n \nlet dayTime = 7;\nlet nightTime = 18;\nconst blendTime = 0.004;\n\nexport function update(value) {\n    if(engine.userProperties.timeofday != 0) {\n       value = engine.userProperties.timeofday -1;\n    } else {\n        value = Math.max(\n        WEMath.smoothStep(dayTime / 24, (dayTime - blendTime) / 24, engine.timeOfDay),\n        WEMath.smoothStep((nightTime - blendTime) / 24, nightTime / 24, engine.timeOfDay));\n    }\n    shared.blendValue = value;\n    return value;\n}\n\nexport function applyUserProperties(changedUserProperties) {\n    if (changedUserProperties.hasOwnProperty(\"daytime\")) {\n        dayTime = engine.userProperties.daytime;\n    }\n    if (changedUserProperties.hasOwnProperty(\"nighttime\")) {\n        nightTime = engine.userProperties.nighttime;\n    }\n}",
+									"value" : 1
+								}
+							},
+							"id" : 905,
+							"textures" : [ null, "bg_night" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 862,
+			"image" : "models/bg_day.json",
+			"locktransforms" : true,
+			"name" : "bg_day",
+			"origin" : "1920.00000 1647.00000 0.00000",
+			"size" : "3840.00000 1026.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 0.1,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2098390419/scroll/effect.json",
+					"id" : 30843,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"repeat" : "1 1",
+								"speedx" : 0.02,
+								"speedy" : 0
+							},
+							"id" : 30844
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterflow/effect.json",
+					"id" : 32184,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phasescale" : 2,
+								"speed" : 0.1,
+								"strength" : 1.0
+							},
+							"id" : 32185,
+							"textures" : [ null, "masks/waterflow_mask_8d99591b", "effects/waterflowphase" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 30840,
+			"image" : "models/workshop/2098390419/clouds2.json",
+			"name" : "구름",
+			"origin" : "1920.00000 2146.25146 0.00000",
+			"scale" : "2.00000 2.00000 2.00000",
+			"size" : "1920.00000 1080.00000",
+			"solid" : true
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.21327",
+			"id" : 411,
+			"instanceoverride" : null,
+			"name" : "Blinking Stars_01(낮밤)",
+			"origin" : "1833.11438 2583.85205 0.00000",
+			"particle" : "particles/workshop/2562725207/Star_01.json"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.21327",
+			"id" : 420,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"id" : 421
+			},
+			"name" : "Glowing Stars_01(밤)",
+			"origin" : "1833.11438 2583.85205 0.00000",
+			"particle" : "particles/workshop/2562725207/Star_04.json",
+			"visible" : 
+			{
+				"script" : "'use strict';\n\nconst dayTime = (7-0.004)/24;\nconst nightTime = 18/24;\n\nexport function update(value) {\n\tif (engine.userProperties.timeofday == 0) {\n\t\tif(engine.timeOfDay < dayTime || engine.timeOfDay >= nightTime) {\n\t\t\treturn true;\n\t\t} else {\n\t\t\treturn false;\n\t\t}\n\t}\n}\n",
+				"user" : 
+				{
+					"condition" : "2",
+					"name" : "timeofday"
+				},
+				"value" : false
+			}
+		},
+		{
+			"angles" : "0.00000 0.00000 -0.78540",
+			"id" : 4697,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.60000002,
+				"count" : 0.2,
+				"id" : 4699,
+				"rate" : 0.5
+			},
+			"name" : "Shooting_Star_01(밤)",
+			"origin" : "1997.12317 1452.86414 0.00000",
+			"particle" : "particles/workshop/2562725207/Shooting_Star_01.json",
+			"scale" : "3.00000 3.00000 3.00000",
+			"visible" : 
+			{
+				"script" : "'use strict';\n\nconst dayTime = (7-0.004)/24;\nconst nightTime = 18/24;\n\nexport function update(value) {\n\tif (engine.userProperties.timeofday == 0) {\n\t\tif(engine.timeOfDay < dayTime || engine.timeOfDay >= nightTime) {\n\t\t\treturn true;\n\t\t} else {\n\t\t\treturn false;\n\t\t}\n\t}\n}\n",
+				"user" : 
+				{
+					"condition" : "2",
+					"name" : "timeofday"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 1039,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"multiply" : 
+								{
+									"script" : "'use strict';\n\nexport function update(value) {\n    value = shared.blendValue;\n    return value;\n}\n",
+									"value" : 1
+								}
+							},
+							"id" : 1040,
+							"textures" : [ null, "bg_night_mountain" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 65621,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 5,
+								"strength" : 0.15000001
+							},
+							"id" : 65622,
+							"textures" : [ null, "masks/foliagesway_mask_985ef129", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/shine/effect.json",
+					"id" : 1152,
+					"name" : "비추기(밤)",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"noiseamount" : 0.44999999,
+								"noisescale" : 3,
+								"noisespeed" : 0.15000001,
+								"raythreshold" : 
+								{
+									"script" : "'use strict';\n\nimport * as WEMath from 'WEMath';\n\nexport function update(value) {\n\tif(engine.userProperties.timeofday == 1) {\n\t\tvalue = 0.67;\n\t} else if(engine.userProperties.timeofday == 2) {\n\t\tvalue = 0.28;\n\t} else {\n\t\tvalue = WEMath.mix(0.67, 0.28, shared.blendValue); // mix(a, b, v) == a + (b - a) * v\n\t}\n\treturn value;\n}",
+									"value" : 0.67000002
+								}
+							},
+							"id" : 1153,
+							"textures" : [ null, "masks/shine_downsample2_mask_e65bbf2e", null ]
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"color" : "1 1 1",
+								"direction" : 0,
+								"rayintensity" : 
+								{
+									"script" : "'use strict';\n\nimport * as WEMath from 'WEMath';\n\nexport function update(value) {\n\tif(engine.userProperties.timeofday == 1) {\n\t\tvalue = 0.35;\n\t} else if(engine.userProperties.timeofday == 2) {\n\t\tvalue = 0.5;\n\t} else {\n\t\tvalue = WEMath.mix(0.35, 0.5, shared.blendValue);// mix(a, b, v) == a + (b - a) * v\n\t}\n\treturn value;\n}",
+									"value" : 0.5
+								},
+								"raylength" : 0.1,
+								"speed" : 0
+							},
+							"id" : 1155
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : 
+								{
+									"script" : "'use strict';\n\nimport * as WEMath from 'WEMath';\n\nexport function update(value) {\n\tif(engine.userProperties.timeofday == 1) {\n\t\tvalue = 2;\n\t} else if(engine.userProperties.timeofday == 2) {\n\t\tvalue = 1;\n\t} else {\n\t\tvalue = WEMath.mix(2, 1, shared.blendValue);// mix(a, b, v) == a + (b - a) * v\n\t}\n\treturn value;\n}",
+									"value" : "1.00000 1.00000"
+								}
+							},
+							"id" : 1156
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : 
+								{
+									"script" : "'use strict';\n\nimport * as WEMath from 'WEMath';\n\nexport function update(value) {\n\tif(engine.userProperties.timeofday == 1) {\n\t\tvalue = 2;\n\t} else if(engine.userProperties.timeofday == 2) {\n\t\tvalue = 1;\n\t} else {\n\t\tvalue = WEMath.mix(2, 1, shared.blendValue);// mix(a, b, v) == a + (b - a) * v\n\t}\n\treturn value;\n}",
+									"value" : "1.00000 1.00000"
+								}
+							},
+							"id" : 1157
+						},
+						{
+							"id" : 1158
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterripple/effect.json",
+					"id" : 3312,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"animationspeed" : 0.1,
+								"ratio" : 5,
+								"ripplestrength" : 0.059999999,
+								"scale" : 1,
+								"scrolldirection" : 0,
+								"scrollspeed" : 0
+							},
+							"id" : 3313,
+							"textures" : [ null, "masks/waterripple_mask_08d07cb8", "effects/waterripplenormal" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1037,
+			"image" : "models/bg_day_mountain.json",
+			"locktransforms" : true,
+			"name" : "bg_day_mountain",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true
+		},
+		{
+			"angles" : "0.00000 -0.17453 0.00000",
+			"id" : 13486,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.60000002,
+				"colorn" : "0.21961 0.27843 0.36078",
+				"id" : 13488,
+				"lifetime" : 1.6,
+				"rate" : 2.0,
+				"size" : 0.5
+			},
+			"name" : "Birds",
+			"origin" : "-162.70496 1766.93677 0.00000",
+			"particle" : "particles/workshop/2511104820/Birds_parent.json",
+			"scale" : "-1.00000 1.00000 1.00000"
+		},
+		{
+			"id" : 477,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.059999999,
+				"id" : 479
+			},
+			"name" : "wind-blur",
+			"origin" : "4037.79395 1404.54529 0.00000",
+			"particle" : "particles/workshop/2888067659/wind-blur.json"
+		},
+		{
+			"id" : 624,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"colorn" : "0.18431 0.36471 0.42353",
+				"count" : 0.2,
+				"id" : 625,
+				"size" : 0.5
+			},
+			"name" : "Leaves",
+			"origin" : "290.97247 1286.24365 0.00000",
+			"particle" : "particles/presets/leaves2.json"
+		},
+		{
+			"id" : 769,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"colorn" : "0.18431 0.36471 0.42353",
+				"count" : 0.2,
+				"size" : 0.5
+			},
+			"name" : "Leaves",
+			"origin" : "3429.74976 1318.31750 0.00000",
+			"particle" : "particles/presets/leaves2.json"
+		},
+		{
+			"id" : 61638,
+			"instanceoverride" : 
+			{
+				"id" : 61639,
+				"rate" : 0.5,
+				"size" : 0.5
+			},
+			"name" : "Rain perspective",
+			"origin" : "1467.48633 1385.03137 0.00000",
+			"particle" : "particles/presets/rainperspective.json",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "weather"
+				},
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"id" : 23640,
+			"instanceoverride" : 
+			{
+				"id" : 125,
+				"rate" : 0.60000002,
+				"size" : 0.60000002
+			},
+			"name" : "Small Snowflakes",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/workshop/2795625020/Small_Snowflakes.json",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "weather"
+				},
+				"value" : false
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.00000",
+			"id" : 21339,
+			"instanceoverride" : 
+			{
+				"id" : 21340,
+				"rate" : 0.60000002,
+				"size" : 0.64999998
+			},
+			"name" : "Small Snowflakes",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/workshop/2795625020/Small_Snowflakes.json",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "weather"
+				},
+				"value" : false
+			}
+		},
+		{
+			"id" : 22699,
+			"instanceoverride" : 
+			{
+				"id" : 22701,
+				"rate" : 0.60000002,
+				"size" : 0.69999999
+			},
+			"name" : "Small Snowflakes",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/workshop/2795625020/Small_Snowflakes.json",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "weather"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blurprecise/effect.json",
+					"id" : 6168,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "0.8 0.8"
+							},
+							"id" : 6169
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "0.8 0.8"
+							},
+							"id" : 6170
+						}
+					],
+					"visible" : 
+					{
+						"user" : "windowblur",
+						"value" : false
+					}
+				}
+			],
+			"id" : 6070,
+			"image" : "models/util/fullscreenlayer.json",
+			"name" : "창문 흐림",
+			"parallaxDepth" : "0.00000 0.00000",
+			"solid" : true
+		},
+		{
+			"id" : 2258,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.55000001,
+				"count" : 2.0,
+				"id" : 2260,
+				"rate" : 0.5,
+				"size" : 0.5
+			},
+			"name" : "rain_on_the_glass",
+			"origin" : "2057.85449 1782.67480 0.00000",
+			"particle" : "particles/workshop/2446129945/rain_on_the_glass_copy1.json",
+			"scale" : "1.80000 1.80000 1.00000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "weather"
+				},
+				"value" : true
+			}
+		},
+		{
+			"id" : 19,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.69999999,
+				"count" : 2.0,
+				"id" : 6,
+				"size" : 0.5
+			},
+			"name" : "Rain_secondary",
+			"origin" : "2023.74243 1332.65979 0.00000",
+			"particle" : "particles/workshop/2446129945/Rain2.json",
+			"scale" : "1.80000 1.80000 1.80000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "weather"
+				},
+				"value" : true
+			}
+		},
+		{
+			"id" : 3622,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.80000001,
+				"id" : 98,
+				"size" : 0.079999998
+			},
+			"name" : "rain_drop_screen",
+			"origin" : "2040.96924 1080.00000 0.00000",
+			"particle" : "particles/workshop/2568188955/rain_drop_screen.json",
+			"scale" : "1.60000 1.60000 1.60000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "weather"
+				},
+				"value" : true
+			}
+		},
+		{
+			"id" : 24399,
+			"instanceoverride" : 
+			{
+				"id" : 84,
+				"size" : 0.079999998
+			},
+			"name" : "snow_drop_screen",
+			"origin" : "2040.96924 1080.00000 0.00000",
+			"particle" : "particles/workshop/2568188955/rain_drop_screen.json",
+			"scale" : "1.60000 1.60000 1.60000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "weather"
+				},
+				"value" : false
+			}
+		},
+		{
+			"id" : 25779,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.80000001,
+				"id" : 25780,
+				"size" : 0.1
+			},
+			"name" : "wet_snow_particles1",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"parallaxDepth" : "1.40000 1.40000",
+			"particle" : "particles/workshop/2446129945/wet_snow1.json",
+			"scale" : "2.01500 2.01500 2.01500",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "weather"
+				},
+				"value" : false
+			}
+		},
+		{
+			"id" : 6370,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.30000001,
+				"colorn" : "0.00000 1.00000 1.00000",
+				"id" : 6371
+			},
+			"name" : "Fireflies",
+			"origin" : "1718.79993 917.53516 0.00000",
+			"particle" : "particles/workshop/2904870983/presets/fireflies.json",
+			"scale" : "0.35250 0.35250 0.35250"
+		},
+		{
+			"id" : 7261,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.30000001,
+				"id" : 7263
+			},
+			"name" : "Fireflies",
+			"origin" : "3112.22217 776.65546 0.00000",
+			"particle" : "particles/workshop/2904870983/presets/fireflies.json",
+			"scale" : "0.35250 0.35250 0.35250"
+		},
+		{
+			"id" : 8329,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.30000001
+			},
+			"name" : "Fireflies",
+			"origin" : "832.75049 909.25635 0.00000",
+			"particle" : "particles/workshop/2904870983/presets/fireflies.json",
+			"scale" : "0.35250 0.35250 0.35250"
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blend/effect.json",
+					"id" : 428,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"multiply" : 
+								{
+									"script" : "'use strict';\n\nexport function update(value) {\n    value = shared.blendValue;\n    return value;\n}\n",
+									"value" : 1
+								}
+							},
+							"id" : 429,
+							"textures" : [ null, "bg_night_mask" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 41,
+			"image" : "models/bg_day_mask.json",
+			"name" : "bg_day_mask",
+			"origin" : "1920.00000 1080.00000 0.00000",
+			"size" : "3840.00000 2160.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2552475732/gradient_color/effect.json",
+					"id" : 39069,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"Amount" : 0.1,
+								"Color 1" : "1 0 0.2",
+								"Color 2" : "0 0 1",
+								"Hue Speed" : 0.30000001,
+								"Opacity" : 0.5,
+								"Oscillate" : 0.5
+							},
+							"id" : 39070,
+							"textures" : [ null, "masks/gradient_color_mask_1d695cce" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 917,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 918,
+							"textures" : [ null, "masks/opacity_mask_ccb1919e" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 38854,
+			"image" : "models/util/composelayer.json",
+			"name" : "노트북",
+			"origin" : "1583.49573 180.12296 0.00000",
+			"size" : "56.00000 56.00000",
+			"solid" : true,
+			"visible" : false
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 -0.00000 -2.84431",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 110686,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"amount" : 2,
+								"bounds" : "0 1",
+								"noiseamount" : 1,
+								"noisespeed" : 0.55000001,
+								"phase" : 0.0,
+								"power" : 1,
+								"speed" : 3.0,
+								"tinthigh" : "1 1 1",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 110687,
+							"textures" : [ null, null, "masks/pulse_mask_32892241" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 110170,
+			"image" : "models/util/composelayer.json",
+			"name" : "노트북 펄스",
+			"origin" : "1975.91577 368.25992 0.00000",
+			"size" : "512.00000 512.00000",
+			"solid" : true,
+			"visible" : false
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 0.00000 0.01745",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2911621101/audio_ring/effect.json",
+					"id" : 340,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3,
+								"SOLIDCOLOR" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"Opacity" : 0.64999998,
+								"Position" : "-5 -5",
+								"Scale" : 10,
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 0.31999999,
+								"color 1" : 
+								{
+									"user" : "ampcolor",
+									"value" : "0.00000 0.64706 1.00000"
+								},
+								"frequencymax" : 15,
+								"frequencymin" : 0.0,
+								"speed" : 1.0,
+								"speed2" : 1.0,
+								"value" : 0.69999999,
+								"value2" : 0.5,
+								"value3" : 10.0,
+								"value4" : 0
+							},
+							"id" : 341
+						}
+					],
+					"visible" : 
+					{
+						"user" : "audioring",
+						"value" : true
+					}
+				},
+				{
+					"file" : "effects/workshop/2911621101/shake/effect.json",
+					"id" : 346,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.0 1.2",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 1.0,
+								"frequencymin" : 0.0,
+								"strength" : 0.1
+							},
+							"id" : 347,
+							"textures" : [ null, "workshop/2911621101/masks/shake_mask_78cc948b" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 18875,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1
+							},
+							"id" : 18876,
+							"textures" : [ null, "masks/opacity_mask_e9bb9a12" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 339,
+			"image" : "models/util/composelayer.json",
+			"name" : "Audio Ring",
+			"origin" : "1200.46667 837.00714 0.00000",
+			"size" : "310.00000 310.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2911621101/audio_ring/effect.json",
+					"id" : 1774,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3,
+								"SOLIDCOLOR" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"Opacity" : 0.64999998,
+								"Position" : "-5 -5",
+								"Scale" : 10,
+								"audioamount" : 1.0,
+								"audiobounds" : "0.5 1.0",
+								"audioexponent" : 0.31999999,
+								"color 1" : 
+								{
+									"user" : "ampcolor",
+									"value" : "0.00000 0.64706 1.00000"
+								},
+								"frequencymax" : 15,
+								"frequencymin" : 0.0,
+								"speed" : 1.0,
+								"speed2" : 1.0,
+								"value" : 0.69999999,
+								"value2" : 0.5,
+								"value3" : 10.0,
+								"value4" : 0
+							},
+							"id" : 1775
+						}
+					],
+					"visible" : 
+					{
+						"user" : "audioring",
+						"value" : true
+					}
+				},
+				{
+					"file" : "effects/workshop/2911621101/shake/effect.json",
+					"id" : 1778,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"AUDIOPROCESSING" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"audioamount" : 1.0,
+								"audiobounds" : "0.0 1.2",
+								"audioexponent" : 1.0,
+								"bounds" : "0 1",
+								"frequencymax" : 1.0,
+								"frequencymin" : 0.0,
+								"strength" : 0.1
+							},
+							"id" : 1779,
+							"textures" : 
+							[
+								null,
+								"workshop/2911621101/masks/shake_mask_78cc948b",
+								null,
+								"masks/shake_mask_5df82264"
+							]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 18449,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 18450,
+							"textures" : [ null, "masks/opacity_mask_e9bb9a12" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 1773,
+			"image" : "models/util/composelayer.json",
+			"name" : "Audio Ring",
+			"origin" : "2738.90430 900.82715 0.00000",
+			"size" : "310.00000 310.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 24,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2491176897/Simple_Audio_Bars/effect.json",
+					"id" : 81729,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"CLIP_HIGH" : 1,
+								"SHAPE" : 8
+							},
+							"constantshadervalues" : 
+							{
+								"Anti-alias blurring" : "0.5 0.5",
+								"Bar Color" : 
+								{
+									"user" : "ampcolor",
+									"value" : "0.00000 0.64706 1.00000"
+								},
+								"Bar Count" : 32,
+								"Bar Spacing" : 0.30000001,
+								"Lower/Upper Bar Bounds" : "0 0.5",
+								"ui_editor_properties_opacity" : 0.89999998
+							},
+							"id" : 81730
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/perspective/effect.json",
+					"id" : 82412,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"point0" : "0.00695 0.16851",
+								"point1" : "0.85054 0.25026",
+								"point2" : "0.85054 0.97497",
+								"point3" : "-0.00347 0.91491"
+							},
+							"id" : 82413
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 81728,
+			"image" : "models/util/composelayer.json",
+			"name" : "Compose",
+			"origin" : "1274.19092 625.92200 0.00000",
+			"scale" : "1.00000 -1.00000 1.00000",
+			"size" : "120.00000 250.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "bar",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 24,
+			"config" : 
+			{
+				"passthrough" : true
+			},
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2491176897/Simple_Audio_Bars/effect.json",
+					"id" : 53465,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"CLIP_HIGH" : 1,
+								"SHAPE" : 8
+							},
+							"constantshadervalues" : 
+							{
+								"Anti-alias blurring" : "0.5 0.5",
+								"Bar Color" : 
+								{
+									"user" : "ampcolor",
+									"value" : "0.00000 0.64706 1.00000"
+								},
+								"Bar Count" : 32,
+								"Bar Spacing" : 0.30000001,
+								"Lower/Upper Bar Bounds" : "0 0.5",
+								"ui_editor_properties_opacity" : 0.89999998
+							},
+							"id" : 53466
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/perspective/effect.json",
+					"id" : 55592,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"point0" : "0.01010 0.11313",
+								"point1" : "1.00000 0.05494",
+								"point2" : "0.96633 0.82384",
+								"point3" : "0.00000 0.85617"
+							},
+							"id" : 55593
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 53464,
+			"image" : "models/util/composelayer.json",
+			"name" : "Compose",
+			"origin" : "2689.43213 712.93933 0.00000",
+			"scale" : "1.00000 -1.00000 1.00000",
+			"size" : "120.00000 250.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "bar",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/shake/effect.json",
+					"id" : 328,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"bounds" : "0 1",
+								"friction" : "1 1",
+								"speed" : 2.5,
+								"strength" : 0.1
+							},
+							"id" : 329,
+							"textures" : [ null, "masks/shake_mask_20ed5a89", null, "masks/shake_mask_66b8110e" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 326,
+			"image" : "models/util/composelayer.json",
+			"name" : "cat",
+			"origin" : "118.52763 919.66602 0.00000",
+			"size" : "256.00000 128.00000",
+			"solid" : true
+		},
+		{
+			"alpha" : 1.0,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.06981",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 24,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/blur/effect.json",
+					"id" : 88129,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"id" : 88130
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 88131
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 88132
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"compositecolor" : "1 1 1"
+							},
+							"id" : 88133
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/Alcubierre.otf",
+			"horizontalalign" : "center",
+			"id" : 87881,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "443.55789 884.17621 0.00000",
+			"padding" : 32,
+			"pointsize" : 32.0,
+			"scale" : "0.60000 0.60000 0.60000",
+			"size" : "330.00000 220.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : 
+					{
+						"user" : "_24hrs",
+						"value" : 
+						{
+							"user" : "use24hformat",
+							"value" : true
+						}
+					}
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "clock",
+				"value" : true
+			}
+		},
+		{
+			"alpha" : 0.5,
+			"anchor" : "none",
+			"angles" : "0.00000 0.00000 0.06981",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"font" : "fonts/Alcubierre.otf",
+			"horizontalalign" : "center",
+			"id" : 42800,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Clock",
+			"opaquebackground" : false,
+			"origin" : "443.55789 884.17621 0.00000",
+			"padding" : 32,
+			"pointsize" : 32.0,
+			"scale" : "0.60000 0.60000 0.60000",
+			"size" : "266.00000 156.00000",
+			"solid" : true,
+			"text" : 
+			{
+				"script" : "'use strict';\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = hours + scriptProperties.delimiter + minutes;\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : false,
+					"use24hFormat" : 
+					{
+						"user" : "_24hrs",
+						"value" : 
+						{
+							"user" : "use24hformat",
+							"value" : true
+						}
+					}
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "clock",
+				"value" : true
+			}
+		},
+		{
+			"angles" : "0.00000 -0.00000 3.03793",
+			"id" : 4715,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.5,
+				"colorn" : "1.00000 1.00000 1.00000",
+				"count" : 0.5,
+				"id" : 270,
+				"lifetime" : 2.0,
+				"size" : 2.0
+			},
+			"name" : "Breath",
+			"origin" : "2043.74719 242.74617 0.00000",
+			"particle" : "particles/workshop/2911469420/breath.json",
+			"scale" : "0.50000 0.50000 0.50000"
+		},
+		{
+			"id" : 247,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.12,
+				"id" : 248,
+				"rate" : 0.5,
+				"speed" : 0.5
+			},
+			"name" : "초 연기",
+			"origin" : "1241.25537 1043.09241 0.00000",
+			"particle" : "particles/presets/vapor1.json"
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"angles" : "0.00000 -0.00000 0.44075",
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 848,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"amount" : 1.0,
+								"bounds" : "0 1",
+								"noiseamount" : 0.0,
+								"noisespeed" : 0.5,
+								"phase" : 0.0,
+								"power" : 1,
+								"speed" : 1,
+								"tinthigh" : "1 0 0",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 849,
+							"textures" : [ null, null, "masks/pulse_mask_a5c73804" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 846,
+			"image" : "models/util/composelayer.json",
+			"name" : "초 펄스",
+			"origin" : "1235.84985 1058.88513 0.00000",
+			"size" : "25.00000 10.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 504,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 505,
+							"textures" : [ null, "masks/opacity_mask_e9efbac8" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 502,
+			"image" : "models/Honeycam 2023-01-03 02-02-52.json",
+			"name" : "bottle",
+			"origin" : "2842.43311 973.61194 0.00000",
+			"scale" : "1.33000 1.33000 1.33000",
+			"size" : "59.00000 162.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2718465779/pulse_/effect.json",
+					"id" : 524,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"amount" : 1.0,
+								"bounds" : "0 1",
+								"noiseamount" : 0,
+								"noisespeed" : 0.5,
+								"phase" : 0,
+								"power" : 2,
+								"speed" : 3,
+								"tinthigh" : "0 0.5019607843137255 0",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 525,
+							"textures" : 
+							[
+								null,
+								null,
+								"masks/pulse__mask_a5aee6b6",
+								"masks/pulse__mask_cc4db9a0"
+							]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 522,
+			"image" : "models/util/composelayer.json",
+			"name" : "bottle pulse",
+			"origin" : "2843.24902 984.36859 0.00000",
+			"size" : "75.00000 200.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/reflection/effect.json",
+					"id" : 3428,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 0
+							},
+							"constantshadervalues" : 
+							{
+								"alpha" : 1,
+								"direction" : -3.1415927,
+								"offset" : 0
+							},
+							"id" : 3429,
+							"textures" : [ null, "masks/reflection_mask_63172baa" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 3348,
+			"image" : "models/util/composelayer.json",
+			"name" : "조명반사",
+			"origin" : "2912.78296 994.04407 0.00000",
+			"size" : "256.00000 256.00000",
+			"solid" : true
+		},
+		{
+			"id" : 590,
+			"instanceoverride" : 
+			{
+				"colorn" : "1.00000 0.74902 0.00000",
+				"id" : 591,
+				"speed" : 0.5
+			},
+			"name" : "fire",
+			"origin" : "3356.69971 747.93787 0.00000",
+			"particle" : "particles/presets/torch.json",
+			"scale" : "1.10000 1.10000 1.10000",
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "1",
+					"name" : "fire"
+				},
+				"value" : false
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 0.62,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"id" : 1489,
+			"image" : "models/Honeycam 2023-01-04 13-44-00.json",
+			"name" : "fire 2d",
+			"origin" : "3349.22217 822.00000 0.00000",
+			"scale" : "1.33000 1.33000 1.33000",
+			"size" : "111.00000 138.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : 
+				{
+					"condition" : "0",
+					"name" : "fire"
+				},
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/opacity/effect.json",
+					"id" : 153,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"alpha" : 1.0
+							},
+							"id" : 370,
+							"textures" : [ null, "masks/opacity_mask_7c67b3cb" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 148,
+			"image" : "models/fire_mask.json",
+			"name" : "fire_mask",
+			"origin" : "3396.00000 843.00000 0.00000",
+			"size" : "556.00000 570.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 189,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"amount" : 1.0,
+								"bounds" : "0 1",
+								"noiseamount" : 0.5,
+								"noisespeed" : 0.5,
+								"phase" : 0.0,
+								"power" : 1,
+								"speed" : 3.0,
+								"tinthigh" : "1 0.6470588235294118 0",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 190,
+							"textures" : [ null, null, "masks/pulse_mask_48e63638" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 187,
+			"image" : "models/util/composelayer.json",
+			"name" : "fire_pulse",
+			"origin" : "3256.29443 586.69550 0.00000",
+			"size" : "1200.00000 1200.00000",
+			"solid" : true
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/pulse/effect.json",
+					"id" : 290,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"amount" : 1,
+								"bounds" : "0 1",
+								"noiseamount" : 0.5,
+								"noisespeed" : 0.5,
+								"phase" : 0.0,
+								"power" : 1,
+								"speed" : 3.0,
+								"tinthigh" : "0.22745098039215686 0 0",
+								"tintlow" : "1 1 1"
+							},
+							"id" : 364,
+							"textures" : [ null, null, "masks/pulse_mask_dfd10b9d" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 288,
+			"image" : "models/util/composelayer.json",
+			"name" : "nearfire_pulse",
+			"origin" : "3053.65479 590.52393 0.00000",
+			"size" : "1600.00000 1200.00000",
+			"solid" : true
+		},
+		{
+			"id" : 472,
+			"instanceoverride" : 
+			{
+				"id" : 473,
+				"size" : 2.0
+			},
+			"name" : "Ash",
+			"origin" : "3395.36108 822.54083 0.00000",
+			"particle" : "particles/presets/ash.json",
+			"scale" : "0.19886 0.19886 0.19886"
+		},
+		{
+			"id" : 355,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.80000001,
+				"colorn" : "1.00000 0.98824 0.80784",
+				"count" : 1.5,
+				"id" : 344,
+				"size" : 0.88999999
+			},
+			"name" : "Dust motes",
+			"origin" : "1920.00000 -205.04224 0.00000",
+			"parallaxDepth" : "0.00000 0.00000",
+			"particle" : "particles/workshop/2907440407/presets/dust_motes_0.json",
+			"scale" : "2.00000 2.00000 2.00000"
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2872146492/tone_mapping/effect.json",
+					"id" : 64954,
+					"name" : "Brightness Expo",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 6,
+								"TONEMAP" : 4
+							},
+							"constantshadervalues" : 
+							{
+								"Corrected display gamma" : 16,
+								"Exposure adjustment" : 2,
+								"Initial display gamma" : 2.74,
+								"Linear angle" : 1,
+								"Linear strength" : 1,
+								"Luminance saturation" : 2,
+								"Opacity" : 0.46000001,
+								"Shoulder strength" : 1,
+								"Toe denominator" : 0.079999998,
+								"Toe numerator" : 0,
+								"Toe strength" : 0.050000001,
+								"White level adjustment" : 10
+							},
+							"id" : 0
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2872146492/tone_mapping/effect.json",
+					"id" : 64957,
+					"name" : "Darkness Expo",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 11,
+								"TONEMAP" : 4
+							},
+							"constantshadervalues" : 
+							{
+								"Corrected display gamma" : 16,
+								"Exposure adjustment" : 0.0099999998,
+								"Initial display gamma" : 2.74,
+								"Linear angle" : 1,
+								"Linear strength" : 1,
+								"Luminance saturation" : 2,
+								"Opacity" : 0.37,
+								"Shoulder strength" : 1,
+								"Toe denominator" : 0.079999998,
+								"Toe numerator" : 0,
+								"Toe strength" : 0.050000001,
+								"White level adjustment" : 10
+							},
+							"id" : 64958
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2872146492/blur/effect.json",
+					"id" : 64959,
+					"name" : "Bloom",
+					"passes" : 
+					[
+						{
+							"id" : 64960
+						},
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 64961
+						},
+						{
+							"combos" : 
+							{
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1 1"
+							},
+							"id" : 64962
+						},
+						{
+							"combos" : 
+							{
+								"BLENDMODE" : 9,
+								"COMPOSITE" : 1,
+								"COMPOSITEMONO" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"compositealpha" : 0.5,
+								"compositecolor" : 
+								{
+									"user" : "hue",
+									"value" : "0.09412 0.59216 1.00000"
+								},
+								"compositeoffset" : "-2 2"
+							},
+							"id" : 64963,
+							"textures" : [ null, "workshop/2872146492/masks/blur_combine_mask_54442d43", null ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 64953,
+			"image" : "models/util/fullscreenlayer.json",
+			"name" : "Luminance Lighting",
+			"parallaxDepth" : "0.00000 0.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "luminance",
+				"value" : true
+			}
+		},
+		{
+			"alignment" : "center",
+			"alpha" : 1.0,
+			"brightness" : 1.0,
+			"color" : "1.00000 1.00000 1.00000",
+			"colorBlendMode" : 0,
+			"copybackground" : true,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2872146492/color_grading/effect.json",
+					"id" : 404,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"PROPERTIES" : 3
+							},
+							"constantshadervalues" : 
+							{
+								"Color temperature" : -0.02,
+								"Opacity" : 0.5,
+								"White balance tint" : 0.56999999
+							},
+							"id" : 405,
+							"textures" : [ null, "workshop/2872146492/masks/color_grading_mask_ebfd225c" ]
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 399,
+			"image" : "models/util/fullscreenlayer.json",
+			"name" : "Post-Processing Layer",
+			"parallaxDepth" : "0.00000 0.00000",
+			"solid" : true,
+			"visible" : 
+			{
+				"user" : "luminance",
+				"value" : true
+			}
+		},
+		{
+			"id" : 1114,
+			"maxtime" : 5.0,
+			"mintime" : 1.0,
+			"muteineditor" : true,
+			"name" : "[YT2mp3.info] - dryhope - White Oak [chill hip hop beats] (128kbps).mp3",
+			"playbackmode" : "loop",
+			"sound" : 
+			[
+				"sounds/[YT2mp3.info] - dryhope - White Oak [chill hip hop beats] (128kbps).mp3"
+			],
+			"startsilent" : false,
+			"volume" : 1.0
+		}
+	],
+	"version" : 1
+}

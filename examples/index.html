@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Engine Web Exporter</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #wallpaper-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wallpaper-container"></div>
+    <script src="src/engine/particles.js"></script>
+    <script src="src/engine/shaders.js"></script>
+    <script src="src/engine/renderer.js"></script>
+    <script>
+        fetch('project.json')
+            .then(response => response.json())
+            .then(projectData => {
+                const container = document.getElementById('wallpaper-container');
+                new Scene(projectData, container);
+            });
+    </script>
+</body>
+</html>

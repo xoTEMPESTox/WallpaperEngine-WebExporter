@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2788994425/effects/radial_beams.json",
+		"shaders/workshop/2788994425/effects/radial_beams.frag",
+		"shaders/workshop/2788994425/effects/radial_beams.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Radial Beams",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2788994425/effects/radial_beams.json"
+		}
+	],
+	"replacementkey" : "radial_beams",
+	"version" : 1
+}

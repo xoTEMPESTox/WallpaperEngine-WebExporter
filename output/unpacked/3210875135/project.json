@@ -1,0 +1,193 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "After Sunset [4K] [img]https://i.kym-cdn.com/photos/images/newsfeed/001/303/089/680[/img]\r\n\r\n🏵️ Animated by [url=https://steamcommunity.com/profiles/76561198451543154/]𝙉𝙤𝙧𝙩𝙝𝙒𝙖𝙮[/url]\r\n\r\n👍 Don't hesitate to subscribe to my [url=https://steamcommunity.com/profiles/76561198451543154/myworkshopfiles/]Workshop[/url] for more wallpapers in this style ♥ :)\r\n\r\n𝗞𝗻𝗼𝘄 𝘁𝗵𝗮𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝘄𝗮𝗹𝗹𝗽𝗮𝗽𝗲𝗿𝘀 𝗮𝗿𝗲 𝗳𝗿𝗲𝗲 😱 𝗮𝗻𝗱 𝘁𝗵𝗮𝘁 𝗜 𝗱𝗼𝗻'𝘁 𝗺𝗮𝗸𝗲 𝗮𝗻𝘆 𝗺𝗼𝗻𝗲𝘆 𝗳𝗿𝗼𝗺 𝗶𝘁.😄 \r\n𝗼𝗳 𝗰𝗼𝘂𝗿𝘀𝗲 𝗜 𝘄𝗼𝘂𝗹𝗱 𝗯𝗲 𝗵𝗮𝗽𝗽𝘆 𝗶𝗳 𝘆𝗼𝘂 𝗺𝗮𝗱𝗲 𝗺𝗲 𝗮 𝗱𝗼𝗻𝗮𝘁𝗶𝗼𝗻🥰💜[u][b][url=https://ko-fi.com/northway]ko-fi[/url][/b][/u]\r\n\r\n🖍️ Art by rmRadev : https://www.deviantart.com/rmradev\r\n\r\nTags : [4K] Live Wallpaper,Shooting Star,Anime,3840 x 2160,Scene,Customizable,Audio responsive,Date,Day,Clock,Media Integration.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"blur" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "Blur",
+				"type" : "bool",
+				"value" : true
+			},
+			"clocks" : 
+			{
+				"index" : 16,
+				"options" : 
+				[
+					{
+						"label" : "24H",
+						"value" : "0"
+					},
+					{
+						"label" : "12H",
+						"value" : "1"
+					},
+					{
+						"label" : "None",
+						"value" : "2"
+					}
+				],
+				"order" : 116,
+				"text" : "Clock",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"clouds" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Clouds",
+				"type" : "bool",
+				"value" : true
+			},
+			"daydatetime" : 
+			{
+				"index" : 15,
+				"order" : 115,
+				"text" : "Day-Date-Time",
+				"type" : "bool",
+				"value" : true
+			},
+			"daydatetime1" : 
+			{
+				"index" : 14,
+				"order" : 114,
+				"text" : "Day Date Time",
+				"type" : "group",
+				"value" : ""
+			},
+			"firefly" : 
+			{
+				"index" : 11,
+				"order" : 111,
+				"text" : "FireFly",
+				"type" : "bool",
+				"value" : true
+			},
+			"intro" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Intro",
+				"type" : "bool",
+				"value" : true
+			},
+			"moon" : 
+			{
+				"index" : 12,
+				"order" : 112,
+				"text" : "Moon",
+				"type" : "bool",
+				"value" : true
+			},
+			"musicplayer" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Music Player",
+				"type" : "bool",
+				"value" : false
+			},
+			"pub" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "<a href='https://www.paypal.com/paypalme/northwayWE'>\n💐 𝘿𝙤𝙣𝙖𝙩𝙞𝙤𝙣 𝙤𝙣 𝙋𝙖𝙮𝙋𝙖𝙡 💐</a>",
+				"type" : "Text"
+			},
+			"pub1" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3369733396'>\n☕ 𝘿𝙤𝙣𝙖𝙩𝙞𝙤𝙣 𝙤𝙣 𝙆𝙤-𝙛𝙞 ☕</a>",
+				"type" : "Text"
+			},
+			"pub2" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "<a href='https://steamcommunity.com/profiles/76561198451543154/myworkshopfiles/'>\n🔔 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙗𝙚 𝙩𝙤 𝙢𝙮 𝙒𝙤𝙧𝙠𝙨𝙝𝙤𝙥 🔔</a>",
+				"type" : "Text"
+			},
+			"pub3" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2943507780'>\n🖼️ 𝙉𝙤𝙧𝙩𝙝𝙒𝙖𝙮 𝙒𝙖𝙡𝙡𝙥𝙖𝙥𝙚𝙧𝙨 𝘾𝙤𝙡𝙡𝙚𝙘𝙩𝙞𝙤𝙣𝙨 🖼️</a>",
+				"type" : "Text"
+			},
+			"pub4" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "<a href='⠀⠀'>\n————————————————————</a>",
+				"type" : "Text"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.12941 0.37255 0.56863"
+			},
+			"shootingstar" : 
+			{
+				"index" : 9,
+				"options" : 
+				[
+					{
+						"label" : "Circular Particles",
+						"value" : "0"
+					},
+					{
+						"label" : "Shooting Star",
+						"value" : "1"
+					},
+					{
+						"label" : "None",
+						"value" : "2"
+					}
+				],
+				"order" : 109,
+				"text" : "Sky",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"soundbar" : 
+			{
+				"index" : 13,
+				"order" : 113,
+				"text" : "SoundBar",
+				"type" : "bool",
+				"value" : true
+			},
+			"stars" : 
+			{
+				"index" : 8,
+				"order" : 108,
+				"text" : "Blinking Stars",
+				"type" : "bool",
+				"value" : true
+			}
+		},
+		"supportsaudioprocessing" : true,
+		"supportsvideo" : true,
+		"supportsvideoflags" : 2
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Anime" ],
+	"title" : "After Sunset [4K]",
+	"type" : "Scene",
+	"version" : 2,
+	"visibility" : "public",
+	"workshopid" : "3210875135",
+	"workshopurl" : "steam://url/CommunityFilePage/3210875135"
+}

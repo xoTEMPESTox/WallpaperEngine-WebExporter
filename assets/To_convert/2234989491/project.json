@@ -1,0 +1,119 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_12" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "24 hour",
+				"type" : "bool",
+				"value" : true
+			},
+			"clocksize" : 
+			{
+				"fraction" : true,
+				"index" : 4,
+				"max" : 36,
+				"min" : 20,
+				"order" : 104,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Clock Size",
+				"type" : "slider",
+				"value" : 30
+			},
+			"datasize" : 
+			{
+				"fraction" : true,
+				"index" : 5,
+				"max" : 36,
+				"min" : 0,
+				"order" : 105,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Day Size",
+				"type" : "slider",
+				"value" : 32
+			},
+			"datesize" : 
+			{
+				"fraction" : true,
+				"index" : 6,
+				"max" : 36,
+				"min" : 0,
+				"order" : 106,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Date Size",
+				"type" : "slider",
+				"value" : 31
+			},
+			"delimeter" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Delimeter",
+				"type" : "textinput",
+				"value" : ":"
+			},
+			"equalizermultiplier" : 
+			{
+				"fraction" : true,
+				"index" : 8,
+				"max" : 200,
+				"min" : 1,
+				"order" : 108,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Equalizer Multiplier",
+				"type" : "slider",
+				"value" : 100
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.9058823529411765 0.6980392156862745 0.5607843137254902"
+			},
+			"show_second" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Show second",
+				"type" : "bool",
+				"value" : false
+			},
+			"showaudioequalizer" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "Show Audio Equalizer (required reload to off)",
+				"type" : "bool",
+				"value" : true
+			},
+			"showclock" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Show Date And Time",
+				"type" : "bool",
+				"value" : true
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "Mountain Clock and Audio - Elegant Clean Look",
+	"type" : "scene",
+	"version" : 6,
+	"visibility" : "public",
+	"workshopid" : "2234989491",
+	"workshopurl" : "steam://url/CommunityFilePage/2234989491"
+}

@@ -1,0 +1,956 @@
+{
+	"camera" : 
+	{
+		"center" : "0.00000 0.00000 -1.00000",
+		"eye" : "0.00000 0.00000 0.00000",
+		"up" : "0.00000 1.00000 0.00000"
+	},
+	"general" : 
+	{
+		"ambientcolor" : "0.30000 0.30000 0.30000",
+		"bloom" : true,
+		"bloomhdrfeather" : 0.1,
+		"bloomhdriterations" : 8,
+		"bloomhdrscatter" : 1.619,
+		"bloomhdrstrength" : 2.0,
+		"bloomhdrthreshold" : 1.0,
+		"bloomstrength" : 1.03,
+		"bloomthreshold" : 0.64999998,
+		"bloomtint" : "1.00000 1.00000 1.00000",
+		"camerafade" : true,
+		"cameraparallax" : false,
+		"cameraparallaxamount" : 0.5,
+		"cameraparallaxdelay" : 0.1,
+		"cameraparallaxmouseinfluence" : 0.5,
+		"camerapreview" : true,
+		"camerashake" : false,
+		"camerashakeamplitude" : 0.5,
+		"camerashakeroughness" : 1.0,
+		"camerashakespeed" : 0.94,
+		"clearcolor" : "0.70000 0.70000 0.70000",
+		"clearenabled" : true,
+		"farz" : 10000.0,
+		"fov" : 50.0,
+		"hdr" : false,
+		"nearz" : 0.0099999998,
+		"orthogonalprojection" : 
+		{
+			"height" : 1440,
+			"width" : 2560
+		},
+		"perspectiveoverridefov" : 95.0,
+		"skylightcolor" : "0.30000 0.30000 0.30000",
+		"zoom" : 1.0
+	},
+	"objects" : 
+	[
+		{
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/waterflow/effect.json",
+					"id" : 493,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phasescale" : 0.0099999998,
+								"speed" : 0.15000001,
+								"strength" : 0.99000001
+							},
+							"id" : 494,
+							"textures" : 
+							[
+								null,
+								"masks/waterflow_mask_42f465fd",
+								"masks/waterripple_mask_8b192c32"
+							]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 117,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.50999999,
+								"power" : 1.02,
+								"ratio" : 0.94999999,
+								"scale" : 0.090000004,
+								"scrolldirection" : 0,
+								"speeduv" : 3.3399999,
+								"strength" : 0.40000001
+							},
+							"id" : 118,
+							"textures" : [ null, "masks/foliagesway_mask_e338c46d", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterflow/effect.json",
+					"id" : 168,
+					"name" : "Cloud Mov - left",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phasescale" : 8.7600002,
+								"speed" : 0.23999999,
+								"strength" : 1.0
+							},
+							"id" : 169,
+							"textures" : [ null, "masks/waterflow_mask_3eaa947e", "effects/waterflowphase" ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/waterflow/effect.json",
+					"id" : 278,
+					"name" : "Cloud Mov - right",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phasescale" : 7.6300001,
+								"speed" : 0.27000001,
+								"strength" : 1.0
+							},
+							"id" : 279,
+							"textures" : [ null, "masks/waterflow_mask_dbbf1dd3", "effects/waterflowphase" ]
+						}
+					],
+					"visible" : false
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 321,
+					"name" : "brown grass middle",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 2.4000001,
+								"strength" : 0.40000001
+							},
+							"id" : 322,
+							"textures" : [ null, "masks/foliagesway_mask_676ebf72", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 407,
+					"name" : "small flowers mid",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.28,
+								"power" : 1.35,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : -3.1415927,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 408,
+							"textures" : [ null, "masks/foliagesway_mask_08e33600", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 434,
+					"name" : "glass / flowers mid + left",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.81999999,
+								"power" : 1.27,
+								"ratio" : 1.41,
+								"scale" : 0.07,
+								"scrolldirection" : 2.7819638,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 435,
+							"textures" : [ null, "masks/foliagesway_mask_3f95b0ed", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 511,
+					"name" : "Tree - Main -1",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.029999999,
+								"power" : 0.98000002,
+								"ratio" : 2.04,
+								"scale" : 0.13,
+								"scrolldirection" : 2.4459996,
+								"speeduv" : 3.76,
+								"strength" : 0.40000001
+							},
+							"id" : 512,
+							"textures" : [ null, "masks/foliagesway_mask_c95fb3ca", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 633,
+					"name" : "Tree - Main 2",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 634,
+							"textures" : [ null, "masks/foliagesway_mask_0ed886d5", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 724,
+					"name" : "Tree - Right -1",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.51999998,
+								"power" : 1.0700001,
+								"ratio" : 2.5899999,
+								"scale" : 0.34999999,
+								"scrolldirection" : 0.44654667,
+								"speeduv" : 4.54,
+								"strength" : 0.38
+							},
+							"id" : 725,
+							"textures" : [ null, "masks/foliagesway_mask_b42b9ef0", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 751,
+					"name" : "Tree Right 2",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.1,
+								"power" : 1.1900001,
+								"ratio" : 1.64,
+								"scale" : 0.14,
+								"scrolldirection" : -1.579397,
+								"speeduv" : 3.78,
+								"strength" : 0.28
+							},
+							"id" : 752,
+							"textures" : [ null, "masks/foliagesway_mask_e1fe8890", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 778,
+					"name" : "Tree Right 3",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0,
+								"scrolldirection" : 0.0,
+								"speeduv" : 3.8599999,
+								"strength" : 0.40000001
+							},
+							"id" : 779,
+							"textures" : [ null, "masks/foliagesway_mask_4f0dc1f8", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 821,
+					"name" : "Tree - Right 4",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 0.73000002,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 2.2,
+								"strength" : 0.40000001
+							},
+							"id" : 822,
+							"textures" : [ null, "masks/foliagesway_mask_f37c2fa6", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 936,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 2.4508603,
+								"speeduv" : 2.51,
+								"strength" : 0.40000001
+							},
+							"id" : 937,
+							"textures" : [ null, "masks/foliagesway_mask_ede80cf5", null ]
+						}
+					],
+					"visible" : false
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 979,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.46000001,
+								"scrolldirection" : -1.9713428,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 980,
+							"textures" : [ null, "masks/foliagesway_mask_608bafce", null ]
+						}
+					],
+					"visible" : false
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 1006,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.52999997,
+								"power" : 1.12,
+								"ratio" : 0.30000001,
+								"scale" : 0.44999999,
+								"scrolldirection" : -0.99788105,
+								"speeduv" : 8.8599997,
+								"strength" : 0.31999999
+							},
+							"id" : 1007,
+							"textures" : [ null, "masks/foliagesway_mask_099cccf4", null ]
+						}
+					],
+					"visible" : false
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 1201,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0,
+								"scrolldirection" : 0.34413844,
+								"speeduv" : 2.0899999,
+								"strength" : 0.40000001
+							},
+							"id" : 1202,
+							"textures" : [ null, "masks/foliagesway_mask_bd9979fd", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 1228,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : 0.0,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 1229,
+							"textures" : [ null, "masks/foliagesway_mask_aee56f9a", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/foliagesway/effect.json",
+					"id" : 1255,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"phase" : 0.5,
+								"power" : 1.0,
+								"ratio" : 0.30000001,
+								"scale" : 0.050000001,
+								"scrolldirection" : -2.5767877,
+								"speeduv" : 5.0,
+								"strength" : 0.40000001
+							},
+							"id" : 1256,
+							"textures" : [ null, "masks/foliagesway_mask_ec0aeb19", null ]
+						}
+					],
+					"visible" : true
+				},
+				{
+					"file" : "effects/workshop/2795521260/color_grading/effect.json",
+					"id" : 270,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"combos" : 
+							{
+								"TOOLS" : 2
+							},
+							"constantshadervalues" : 
+							{
+								"Channel influence" : "1 1 1",
+								"Color temperature" : 0,
+								"Luminance" : 0,
+								"Opacity" : 1.0,
+								"Saturation" : 0,
+								"Vibrance" : 0.090000004,
+								"White balance tint" : 0
+							},
+							"id" : 271
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 16,
+			"image" : "models/dvl4k1ofpw2c1.json",
+			"ledsource" : true,
+			"locktransforms" : true,
+			"name" : "Main Image",
+			"origin" : "1280.00000 720.00000 0.00000",
+			"size" : "2560.00000 1440.00000"
+		},
+		{
+			"angles" : "0.00000 -0.00000 1.13838",
+			"id" : 19,
+			"instanceoverride" : 
+			{
+				"id" : 20,
+				"size" : 1.02
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "495.41925 745.21338 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "0.48832 0.57634 0.48832"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.01491",
+			"id" : 64,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.63999999,
+				"id" : 65,
+				"size" : 0.41999999
+			},
+			"locktransforms" : true,
+			"name" : "Fog 1",
+			"origin" : "765.71967 786.19952 0.00000",
+			"particle" : "particles/presets/fog1.json",
+			"scale" : "0.40798 0.22948 0.67005"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.01491",
+			"id" : 1282,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.79000002,
+				"id" : 1284
+			},
+			"locktransforms" : true,
+			"name" : "Fog 1",
+			"origin" : "1108.33508 840.29675 0.00000",
+			"particle" : "particles/presets/fog1.json",
+			"scale" : "0.40798 0.22948 0.67005"
+		},
+		{
+			"angles" : "0.00000 -0.00000 1.56019",
+			"id" : 211,
+			"instanceoverride" : 
+			{
+				"alpha" : 0.97000003,
+				"count" : 0.97000003,
+				"id" : 212,
+				"size" : 1.5700001
+			},
+			"locktransforms" : true,
+			"name" : "Fog 1",
+			"origin" : "1436.62488 561.21014 0.00000",
+			"particle" : "particles/presets/fog1.json",
+			"scale" : "0.19243 0.30008 0.64687"
+		},
+		{
+			"id" : 203,
+			"instanceoverride" : 
+			{
+				"count" : 0.54000002,
+				"id" : 204,
+				"rate" : 0.43000001,
+				"size" : 0.27000001,
+				"speed" : 0.029999999
+			},
+			"name" : "Star field",
+			"origin" : "1626.87012 1237.47583 0.00000",
+			"particle" : "particles/presets/starfield.json",
+			"scale" : "3.45185 0.32770 0.97118",
+			"visible" : false
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.23756",
+			"id" : 217,
+			"instanceoverride" : 
+			{
+				"id" : 218,
+				"size" : 1.65
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "1752.60986 527.97992 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "0.12701 0.21017 0.26462"
+		},
+		{
+			"angles" : "0.00000 -0.00000 0.72251",
+			"id" : 223,
+			"instanceoverride" : 
+			{
+				"id" : 225,
+				"size" : 1.14
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "2114.07129 582.99780 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "0.20123 0.21572 0.26462"
+		},
+		{
+			"angles" : "-0.00000 -0.00000 -1.03921",
+			"id" : 229,
+			"instanceoverride" : 
+			{
+				"id" : 231,
+				"size" : 0.88999999
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "2305.81226 623.38098 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "-0.16779 0.19527 0.19547"
+		},
+		{
+			"angles" : "0.00000 -0.00000 1.79440",
+			"id" : 235,
+			"instanceoverride" : 
+			{
+				"id" : 129,
+				"size" : 1.55
+			},
+			"name" : "Sakura",
+			"origin" : "2306.33862 770.99133 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "0.38796 -0.23396 0.41122"
+		},
+		{
+			"id" : 162,
+			"instanceoverride" : 
+			{
+				"count" : 0.56999999,
+				"id" : 163,
+				"size" : 2.27
+			},
+			"locktransforms" : true,
+			"name" : "Sakura",
+			"origin" : "893.66284 251.95609 0.00000",
+			"particle" : "particles/presets/leaves5.json",
+			"scale" : "0.15789 0.12905 0.22999"
+		},
+		{
+			"alpha" : 0.059999999,
+			"castshadow" : false,
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2098390419/scroll/effect.json",
+					"id" : 115,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"repeat" : "1 1",
+								"speedx" : 0.2,
+								"speedy" : 0
+							},
+							"id" : 0
+						}
+					],
+					"visible" : true
+				}
+			],
+			"id" : 112,
+			"image" : "models/workshop/2098390419/clouds2.json",
+			"name" : "Basic Clouds Movement",
+			"origin" : "1665.75049 1252.06958 0.00000",
+			"scale" : "1.68726 0.53444 1.00000",
+			"size" : "1920.00000 1080.00000"
+		},
+		{
+			"anchor" : "none",
+			"angles" : "-0.00000 -0.00000 -0.01036",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.4,
+			"castshadow" : false,
+			"color" : 
+			{
+				"user" : "daycolor",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2981960200/blurprecise/effect.json",
+					"id" : 206,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "0.43 0.43"
+							},
+							"id" : 207
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "0.43 0.43"
+							},
+							"id" : 208
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/workshop/2981960200/Anurati-Regular.otf",
+			"horizontalalign" : "center",
+			"id" : 205,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "D a y",
+			"opaquebackground" : false,
+			"origin" : "2009.58301 1305.03845 0.00000",
+			"padding" : 32,
+			"pointsize" : 32.0,
+			"scale" : "0.76959 0.79560 0.95818",
+			"size" : "368.00000 224.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2981960200';\n// Please note: Do not remove this line or asset references may break.\n// Please note: Do not remove this line or asset references may break.\n\n\nexport var scriptProperties = createScriptProperties()\n\t.addCombo({\n\t\tname: 'monthFormat',\n\t\tlabel: 'Month Format',\n\t\toptions: [{\n\t\t\tlabel: 'Numeric',\n\t\t\tvalue: '1'\n\t\t}, {\n\t\t\tlabel: 'Abbreviated',\n\t\t\tvalue: '2'\n\t\t},{\n\t\t\tlabel: 'Full',\n\t\t\tvalue: '3'\n\t\t}]\n\t})\n\t.addCombo({\n\t\tname: 'dayFormat',\n\t\tlabel: 'Day Format',\n\t\toptions: [{\n\t\t\tlabel: 'Abbreviated',\n\t\t\tvalue: '1'\n\t\t}, {\n\t\t\tlabel: 'Full',\n\t\t\tvalue: '2'\n\t\t}]\n\t})\n\t.addCheckbox({\n\t\tname: 'showDay',\n\t\tlabel: 'Show Day',\n\t\tvalue: true\n\t})\n   .addCheckbox({\n\t\tname: 'alignVertical',\n\t\tlabel: 'Align Day Vertically',\n\t\tvalue: false\n\t})\n  .addCheckbox({\n\t\tname: 'useDelimiter',\n\t\tlabel: 'Use Delimiter',\n\t\tvalue: false\n\t})\n\t.addText({\n\t\tname: 'addDelimiter',\n\t\tlabel: 'Delimiter',\n\t\tvalue: '/'\n\t})\n\t.finish();\n\n\nlet months;\nlet day;\nvar delimiterValue;\nvar newLine;\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value){\n  if (scriptProperties.useDelimiter == true){\n  delimiterValue = scriptProperties.addDelimiter\n}\n  if (scriptProperties.useDelimiter == false){\n   delimiterValue = [\n  ' '\n]\n}\nif (scriptProperties.alignVertical == true){\n   newLine = [\n  '\\n'\n]\n}\nif (scriptProperties.alignVertical == false){\n   newLine = [\n  ''\n]\n}\n  if (scriptProperties.monthFormat == 1){\n  months = [\n  '1',\n  '2',\n  '3',\n  '4',\n  '5',\n  '6',\n  '7',\n  '8',\n  '9',\n  '10',\n  '11',\n  '12'\n]\n}\n if (scriptProperties.monthFormat == 2){\n months = [\n  'JAN',\n  'FEB',\n  'MAR',\n  'APR',\n  'MAY',\n  'JUN',\n  'JUL',\n  'AUG',\n  'SEP',\n  'OCT',\n  'NOV',\n  'DEC'\n]\n}\nif (scriptProperties.monthFormat == 3){\n months = [\n  'January',\n  'February',\n  'March',\n  'April',\n  'May',\n  'June',\n  'July',\n  'August',\n  'September',\n  'October',\n  'November',\n  'December'\n]\n}\nif (scriptProperties.dayFormat == 1){\n  day = [\n  'S U N',\n  'M O N',\n  'T U E',\n  'W E D',\n  'T H U',\n  'F R I',\n  'S A T'\n]\n}\nif (scriptProperties.dayFormat == 2){\n day = [\n  'S U N D A Y',\n  'M O N D A Y',\n  'T U E S D A Y',\n  'W E D N E S D A Y',\n  'T H U R S D A Y',\n  'F R I D A Y',\n  'S A T U R D A Y'\n]\n}\n\tlet date = new Date();{\n    if (scriptProperties.showDay == true ){\n    return day[date.getDay()]      }\n    if (scriptProperties.showDay == false ){\n\treturn   date.getDate() + delimiterValue + months[date.getMonth()] + delimiterValue + date.getFullYear();\n}\n}\n}\n",
+				"scriptproperties" : 
+				{
+					"addDelimiter" : "/",
+					"alignVertical" : false,
+					"dayFormat" : "2",
+					"monthFormat" : "1",
+					"showDay" : true,
+					"useDelimiter" : true
+				},
+				"value" : "DAY"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showday",
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 1.98,
+			"castshadow" : false,
+			"color" : 
+			{
+				"user" : "datecolor",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2981960200/blurprecise/effect.json",
+					"id" : 214,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1.33 1.33"
+							},
+							"id" : 215
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1.33 1.33"
+							},
+							"id" : 216
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/workshop/2981960200/Quicksand-Bold.otf",
+			"horizontalalign" : "center",
+			"id" : 213,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Date",
+			"opaquebackground" : false,
+			"origin" : "1994.88147 1238.31262 0.00000",
+			"padding" : 32,
+			"pointsize" : 32.0,
+			"scale" : "0.31731 0.30580 0.44841",
+			"size" : "522.00000 219.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2981960200';\n// Please note: Do not remove this line or asset references may break.\n// Please note: Do not remove this line or asset references may break.\n\n\nexport var scriptProperties = createScriptProperties()\n\t.addCombo({\n\t\tname: 'monthFormat',\n\t\tlabel: 'Month Format',\n\t\toptions: [{\n\t\t\tlabel: 'Numeric',\n\t\t\tvalue: '1'\n\t\t}, {\n\t\t\tlabel: 'Abbreviated',\n\t\t\tvalue: '2'\n\t\t},{\n\t\t\tlabel: 'Full',\n\t\t\tvalue: '3'\n\t\t}]\n\t})\n\t.addCombo({\n\t\tname: 'dayFormat',\n\t\tlabel: 'Day Format',\n\t\toptions: [{\n\t\t\tlabel: 'Abbreviated',\n\t\t\tvalue: '1'\n\t\t}, {\n\t\t\tlabel: 'Full',\n\t\t\tvalue: '2'\n\t\t}]\n\t})\n\t.addCheckbox({\n\t\tname: 'showDay',\n\t\tlabel: 'Show Day',\n\t\tvalue: false\n\t})\n   .addCheckbox({\n\t\tname: 'alignVertical',\n\t\tlabel: 'Align Day Vertically',\n\t\tvalue: false\n\t})\n  .addCheckbox({\n\t\tname: 'useDelimiter',\n\t\tlabel: 'Use Delimiter',\n\t\tvalue: false\n\t})\n\t.addText({\n\t\tname: 'addDelimiter',\n\t\tlabel: 'Delimiter',\n\t\tvalue: '/'\n\t})\n\t.finish();\n\n\nlet months;\nlet day;\nvar delimiterValue;\nvar newLine;\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value){\n  if (scriptProperties.useDelimiter == true){\n  delimiterValue = scriptProperties.addDelimiter\n}\n  if (scriptProperties.useDelimiter == false){\n   delimiterValue = [\n  ' '\n]\n}\nif (scriptProperties.alignVertical == true){\n   newLine = [\n  '\\n'\n]\n}\nif (scriptProperties.alignVertical == false){\n   newLine = [\n  ''\n]\n}\n  if (scriptProperties.monthFormat == 1){\n  months = [\n  '1',\n  '2',\n  '3',\n  '4',\n  '5',\n  '6',\n  '7',\n  '8',\n  '9',\n  '10',\n  '11',\n  '12'\n]\n}\n if (scriptProperties.monthFormat == 2){\n months = [\n  ' JAN ',\n  ' FEB ',\n  ' MAR ',\n  ' APR ',\n  ' MAY ',\n  ' JUN ',\n  ' JUL ',\n  ' AUG ',\n  ' SEP ',\n  ' OCT ',\n  ' NOV ',\n  ' DEC '\n]\n}\nif (scriptProperties.monthFormat == 3){\n months = [\n  'January',\n  'February',\n  'March',\n  'April',\n  'May',\n  'June',\n  'July',\n  'August',\n  'September',\n  'October',\n  'November',\n  'December'\n]\n}\nif (scriptProperties.dayFormat == 1){\n  day = [\n  'Sun',\n  'Mon',\n  'Tue',\n  'Wed',\n  'Thu',\n  'Fri',\n  '\\nSat'\n]\n}\nif (scriptProperties.dayFormat == 2){\n day = [\n  'Sunday',\n  'Monday',\n  'Tuesday',\n  'Wednesday',\n  'Thursday',\n  'Friday',\n  '\\nSaturday'\n]\n}\n\tlet date = new Date();{\n    if (scriptProperties.showDay == true ){\n    return day[date.getDay()] + newLine + ' ' + date.getDate() + delimiterValue + months[date.getMonth()] + delimiterValue + date.getFullYear();\n    }\n    if (scriptProperties.showDay == false ){\n\treturn   date.getDate() + delimiterValue + months[date.getMonth()] + delimiterValue + date.getFullYear();\n}\n}\n}\n",
+				"scriptproperties" : 
+				{
+					"addDelimiter" : "",
+					"alignVertical" : false,
+					"dayFormat" : "2",
+					"monthFormat" : "2",
+					"showDay" : false,
+					"useDelimiter" : true
+				},
+				"value" : "<Date>"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showdate",
+				"value" : true
+			}
+		},
+		{
+			"anchor" : "none",
+			"backgroundbrightness" : 1.0,
+			"backgroundcolor" : "0.00000 0.00000 0.00000",
+			"blockalign" : false,
+			"brightness" : 2.3900001,
+			"castshadow" : false,
+			"color" : 
+			{
+				"user" : "clockcolor",
+				"value" : "1.00000 1.00000 1.00000"
+			},
+			"depthtest" : "enabled",
+			"effects" : 
+			[
+				{
+					"file" : "effects/workshop/2981960200/blurprecise/effect.json",
+					"id" : 198,
+					"name" : "",
+					"passes" : 
+					[
+						{
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 199
+						},
+						{
+							"combos" : 
+							{
+								"ENABLEMASK" : 1,
+								"VERTICAL" : 1
+							},
+							"constantshadervalues" : 
+							{
+								"scale" : "1.28 1.28"
+							},
+							"id" : 200
+						}
+					],
+					"visible" : true
+				}
+			],
+			"font" : "fonts/workshop/2981960200/Quicksand-Bold.otf",
+			"horizontalalign" : "center",
+			"id" : 197,
+			"limitrows" : false,
+			"limituseellipsis" : false,
+			"limitwidth" : false,
+			"maxrows" : 1,
+			"maxwidth" : 500.0,
+			"name" : "Time",
+			"opaquebackground" : false,
+			"origin" : "1997.15247 1199.29907 0.00000",
+			"padding" : 32,
+			"pointsize" : 32.0,
+			"scale" : "0.28038 0.28038 0.28038",
+			"size" : "387.00000 219.00000",
+			"text" : 
+			{
+				"script" : "'use strict';\n// Please note: Do not remove this line or asset references may break.\nexport let __workshopId = '2981960200';\n// Please note: Do not remove this line or asset references may break.\n\nexport var scriptProperties = createScriptProperties()\n\t// Whether you want a 24h or 12h style format\n\t.addCheckbox({\n\t\tname: 'use24hFormat',\n\t\tlabel: 'ui_editor_properties_use_24h_format',\n\t\tvalue: true\n\t})\n\t// Whether you want to see the seconds or not\n\t.addCheckbox({\n\t\tname: 'showSeconds',\n\t\tlabel: 'ui_editor_properties_show_seconds',\n\t\tvalue: false\n\t})\n\t// This will be used to separate each element\n\t.addText({\n\t\tname: 'delimiter',\n\t\tlabel: 'ui_editor_properties_delimiter',\n\t\tvalue: ':'\n\t})\n\t.finish();\n\n/**\n * @param {String} value (for property 'text')\n */\nexport function update(value) {\n\tlet time = new Date();\n\tvar hours = time.getHours();\n\tif (!scriptProperties.use24hFormat) {\n\t\thours %= 12;\n\t\tif (hours == 0) {\n\t\t\thours = 12;\n\t\t}\n\t}\n\thours = (\"00\" + hours).slice(-2);\n\tlet minutes = (\"00\" + time.getMinutes()).slice(-2);\n\tvalue = \"-\" + hours + scriptProperties.delimiter + minutes+\"-\";\n\tif (scriptProperties.showSeconds) {\n\t\tlet seconds = (\"00\" + time.getSeconds()).slice(-2);\n\t\tvalue += scriptProperties.delimiter + seconds;\n\t}\n\treturn value;\n}\n",
+				"scriptproperties" : 
+				{
+					"delimiter" : ":",
+					"showSeconds" : 
+					{
+						"user" : "showseconds",
+						"value" : false
+					},
+					"use24hFormat" : 
+					{
+						"user" : "_24hrsformat",
+						"value" : false
+					}
+				},
+				"value" : "12:34"
+			},
+			"verticalalign" : "center",
+			"visible" : 
+			{
+				"user" : "showclock",
+				"value" : true
+			}
+		},
+		{
+			"id" : 7030,
+			"instanceoverride" : 
+			{
+				"count" : 1.35,
+				"id" : 7032,
+				"lifetime" : 0.44999999,
+				"rate" : 1.27,
+				"size" : 1.17,
+				"speed" : 0.5
+			},
+			"locktransforms" : true,
+			"name" : "Stars",
+			"origin" : "1428.19800 1678.53857 0.00000",
+			"particle" : "particles/workshop/2097513175/Stars.json",
+			"scale" : "1.06759 1.15960 1.00008"
+		}
+	],
+	"version" : 1
+}

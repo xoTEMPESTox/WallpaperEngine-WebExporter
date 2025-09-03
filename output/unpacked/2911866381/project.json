@@ -1,0 +1,193 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "When set to auto, wallpaper changes to night time at 6 PM and 7 AM it changes back to day time by the default.\r\nDay to night (or vice versa) switch time is customizable in properties.\r\nYou can choose background weather between rain and snow.\r\n\r\n🎨 Artwork by Jeff Östberg\r\n・ https://instagram.com/jeffelicious\r\n\r\n🎧 Music by dryhope \r\n・ https://www.youtube.com/watch?v=QEWV6fiYaDU\r\n",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_24hrs" : 
+			{
+				"condition" : "clock.value == true",
+				"index" : 7,
+				"order" : 107,
+				"text" : "-24hrs",
+				"type" : "bool",
+				"value" : true
+			},
+			"ampcolor" : 
+			{
+				"index" : 9,
+				"order" : 109,
+				"text" : "Amp Color",
+				"type" : "color",
+				"value" : "0 0.6470588235294118 1"
+			},
+			"bar" : 
+			{
+				"index" : 8,
+				"order" : 108,
+				"text" : "Bar",
+				"type" : "bool",
+				"value" : true
+			},
+			"bloom" : 
+			{
+				"index" : 12,
+				"order" : 112,
+				"text" : "Bloom",
+				"type" : "bool",
+				"value" : false
+			},
+			"clock" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Clock",
+				"type" : "bool",
+				"value" : true
+			},
+			"daytime" : 
+			{
+				"condition" : "timeofday.value == 0",
+				"fraction" : false,
+				"index" : 1,
+				"max" : 23,
+				"min" : 0,
+				"order" : 101,
+				"text" : "day time",
+				"type" : "slider",
+				"value" : 7
+			},
+			"fire" : 
+			{
+				"index" : 4,
+				"options" : 
+				[
+					{
+						"label" : "2d",
+						"value" : "0"
+					},
+					{
+						"label" : "3d",
+						"value" : "1"
+					}
+				],
+				"order" : 104,
+				"text" : "Fire",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"hue" : 
+			{
+				"condition" : "luminance.value == true",
+				"index" : 11,
+				"order" : 111,
+				"text" : "-hue",
+				"type" : "color",
+				"value" : "0.09411764705882353 0.592156862745098 1"
+			},
+			"luminance" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Post-Processing",
+				"type" : "bool",
+				"value" : true
+			},
+			"newproperty" : 
+			{
+				"index" : 13,
+				"order" : 113,
+				"text" : "<hr><center><a href='https://steamcommunity.com/profiles/76561198210294039/myworkshopfiles/?appid=431960'><img src='https://i.imgur.com/YGAI38e.png'></a></center>",
+				"type" : "text"
+			},
+			"nighttime" : 
+			{
+				"condition" : "timeofday.value == 0",
+				"fraction" : false,
+				"index" : 2,
+				"max" : 23,
+				"min" : 0,
+				"order" : 102,
+				"text" : "night time",
+				"type" : "slider",
+				"value" : 18
+			},
+			"schemecolor" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"timeofday" : 
+			{
+				"index" : 0,
+				"options" : 
+				[
+					{
+						"label" : "auto",
+						"value" : "0"
+					},
+					{
+						"label" : "day",
+						"value" : "1"
+					},
+					{
+						"label" : "night",
+						"value" : "2"
+					}
+				],
+				"order" : 100,
+				"text" : "Time of day",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"weather" : 
+			{
+				"index" : 3,
+				"options" : 
+				[
+					{
+						"label" : "rain",
+						"value" : "0"
+					},
+					{
+						"label" : "snow",
+						"value" : "1"
+					},
+					{
+						"label" : "none",
+						"value" : "2"
+					}
+				],
+				"order" : 103,
+				"text" : "Weather",
+				"type" : "combo",
+				"value" : "0"
+			},
+			"windowblur" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Window Blur",
+				"type" : "bool",
+				"value" : false
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Relaxing" ],
+	"title" : "White Oak (Day/Night)",
+	"type" : "Scene",
+	"version" : 6,
+	"visibility" : "public",
+	"workshopid" : "2911866381",
+	"workshopurl" : "steam://url/CommunityFilePage/2911866381"
+}

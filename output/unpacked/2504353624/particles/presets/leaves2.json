@@ -1,0 +1,131 @@
+{
+	"children" : 
+	[
+		{
+			"id" : 12,
+			"name" : "particles/presets/leaves2b.json"
+		}
+	],
+	"controlpoint" : 
+	[
+		{
+			"flags" : 0,
+			"id" : 0,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 1,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 2,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 3,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 4,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 5,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 6,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 7,
+			"offset" : "0 0 0"
+		}
+	],
+	"emitter" : 
+	[
+		{
+			"directions" : "0.5 0.5 0",
+			"distancemax" : 450,
+			"distancemin" : 0,
+			"id" : 8,
+			"name" : "sphererandom",
+			"rate" : 1.5
+		}
+	],
+	"flags" : 0,
+	"initializer" : 
+	[
+		{
+			"id" : 2,
+			"max" : 15,
+			"min" : 10,
+			"name" : "lifetimerandom"
+		},
+		{
+			"id" : 3,
+			"max" : 100,
+			"min" : 35,
+			"name" : "sizerandom"
+		},
+		{
+			"id" : 4,
+			"max" : "-50 -15 0",
+			"min" : "-100 -100 0",
+			"name" : "velocityrandom"
+		},
+		{
+			"id" : 5,
+			"name" : "rotationrandom"
+		},
+		{
+			"id" : 6,
+			"name" : "turbulentvelocityrandom",
+			"offset" : 3,
+			"scale" : 0.5,
+			"speedmax" : 100,
+			"speedmin" : 35
+		},
+		{
+			"id" : 7,
+			"max" : "0 0 1",
+			"min" : "0 0 -1",
+			"name" : "angularvelocityrandom"
+		}
+	],
+	"material" : "materials/presets/leaves2.json",
+	"maxcount" : 100000,
+	"operator" : 
+	[
+		{
+			"id" : 9,
+			"name" : "movement"
+		},
+		{
+			"fadeintime" : 0.29999999999999999,
+			"fadeouttime" : 0.29999999999999999,
+			"id" : 10,
+			"name" : "alphafade"
+		},
+		{
+			"id" : 11,
+			"name" : "angularmovement"
+		}
+	],
+	"renderer" : 
+	[
+		{
+			"id" : 1,
+			"name" : "sprite"
+		}
+	],
+	"sequencemultiplier" : 3,
+	"starttime" : 3
+}
