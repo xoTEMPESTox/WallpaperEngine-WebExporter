@@ -1,0 +1,11 @@
+{
+    "version": "1.0",
+    "scene": {
+        "layers": [],
+        "particles": [],
+        "effects": [],
+        "shaders": [],
+        "audio": [],
+        "ui": {}
+    }
+}

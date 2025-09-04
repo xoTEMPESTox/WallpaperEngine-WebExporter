@@ -8,7 +8,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <footer style={{ textAlign: 'center', padding: '20px', marginTop: '50px', borderTop: '1px solid #eee', color: '#555' }}>
+          <p>
+            Found an issue? {' '}
+            <a href="https://github.com/Dirkug/WallpaperEngine-WebExporter/issues" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'none' }}>
+              Report an Issue
+            </a>
+          </p>
+        </footer>
+      </body>
     </html>
   );
 }

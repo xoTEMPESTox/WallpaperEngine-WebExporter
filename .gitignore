@@ -23,3 +23,6 @@ output/web/*
 
 # next.js specific
 .next
+
+# Cache
+*/__pycache__

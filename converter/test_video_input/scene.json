@@ -1,0 +1,11 @@
+{
+  "general": {
+    "properties": {}
+  },
+  "objects": [
+    {
+      "type": "video",
+      "file": "sample_video.mp4"
+    }
+  ]
+}

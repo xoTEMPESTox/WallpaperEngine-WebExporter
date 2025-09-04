@@ -1,6 +1,6 @@
 # WALLPAPERENGINE-WEBEXPORTER
 
-This project aims to provide a UI-first MVP for a Wallpaper Engine web exporter.
+This project provides a UI-first MVP for a Wallpaper Engine web exporter, now featuring real conversion for **video** and **parallax** wallpapers.
 
 ## Credits
 
@@ -21,7 +21,7 @@ This project aims to provide a UI-first MVP for a Wallpaper Engine web exporter.
 ### Dependencies
 *   **RePKG**: Unpacking dependency ([https://github.com/notscuffed/repkg](https://github.com/notscuffed/repkg))
 *   **Pixi.js**: Rendering library
-*   **Three.js**: 3D rendering library (if used)
+*   **Three.js**: 3D rendering library
 *   **JSZip**: For creating ZIP archives
 *   **FileSaver**: For saving files client-side
 *   **Next.js**: React framework

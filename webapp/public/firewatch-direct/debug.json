@@ -1,0 +1,22 @@
+{
+    "timestamp": "2025-09-04T13:45:11.160329",
+    "input_path": "converter\\test_parallax_input",
+    "output_base_path": "webapp\\public\\demos\\firewatch",
+    "forced_type": null,
+    "process_all": false,
+    "results": [
+        {
+            "wallpaper_name": "test_parallax_input",
+            "detected_type": "parallax",
+            "conversion_type": "parallax",
+            "metadata": {
+                "image_files": [
+                    "image1.png",
+                    "image2.jpg"
+                ]
+            },
+            "status": "success_with_warnings",
+            "output_dir": "webapp\\public\\demos\\firewatch"
+        }
+    ]
+}

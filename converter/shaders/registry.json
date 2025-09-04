@@ -1,0 +1,31 @@
+{
+  "shaders": {
+    "ripple": {
+      "template": "ripple.glsl",
+      "uniforms": {
+        "time": "u_time",
+        "speed": "u_speed",
+        "amplitude": "u_amplitude"
+      }
+    },
+    "flow": {
+      "template": "flow.glsl",
+      "uniforms": {
+        "time": "u_time",
+        "direction": "u_direction"
+      }
+    },
+    "blur": {
+      "template": "blur.glsl",
+      "uniforms": {
+        "strength": "u_strength"
+      }
+    },
+    "color_grading": {
+      "template": "color_grading.glsl",
+      "uniforms": {
+        "lut": "u_lut"
+      }
+    }
+  }
+}

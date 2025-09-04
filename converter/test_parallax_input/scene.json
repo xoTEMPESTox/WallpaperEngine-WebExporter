@@ -1,0 +1,35 @@
+{
+  "general": {
+    "properties": {}
+  },
+  "objects": [
+    {
+      "name": "Image Layer 1",
+      "materials": {
+        "image": "materials/image1.png"
+      },
+      "depth": 0.2
+    },
+    {
+      "name": "Image Layer 2",
+      "materials": {
+        "image": "materials/image2.jpg"
+      },
+      "depth": 0.5
+    },
+    {
+      "name": "Clock",
+      "type": "clock",
+      "ui": {
+        "type": "clock"
+      }
+    },
+    {
+      "name": "Audio Visualizer",
+      "type": "audio",
+      "ui": {
+        "type": "audio"
+      }
+    }
+  ]
+}

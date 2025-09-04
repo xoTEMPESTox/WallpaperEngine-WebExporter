@@ -1,0 +1,19 @@
+{
+    "timestamp": "2025-09-04T14:53:14.528305",
+    "input_path": "converter\\test_video_input",
+    "output_base_path": "webapp\\public\\demos\\mountain_clock",
+    "forced_type": null,
+    "process_all": false,
+    "results": [
+        {
+            "wallpaper_name": "test_video_input",
+            "detected_type": "video",
+            "conversion_type": "video",
+            "metadata": {
+                "video_file": "sample_video.mp4"
+            },
+            "status": "success_with_warnings",
+            "output_dir": "webapp\\public\\demos\\mountain_clock"
+        }
+    ]
+}

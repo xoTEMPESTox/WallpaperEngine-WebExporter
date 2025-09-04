@@ -1,44 +1,62 @@
-// Basic Pixi.js initialization sample
-// This script doesn't implement full parallax logic, just a minimal setup.
-
-// Ensure Pixi.js is loaded before this script, e.g., via a CDN in index.html
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.x.x/pixi.min.js"></script>
+// This script will be dynamically generated.
+// It initializes Pixi.js, loads parallax layers, and implements mouse-based parallax.
 
 window.onload = () => {
-    const canvas = document.getElementById('parallaxCanvas');
-    if (!canvas) {
-        console.error('Canvas element not found!');
-        return;
-    }
-
+    // Pixi.js Application setup
     const app = new PIXI.Application({
-        view: canvas,
-        width: window.innerWidth,
-        height: window.innerHeight,
-        backgroundColor: 0x1a1a1a, // Dark background
+        resizeTo: window, // Automatically resize to fill the window
+        backgroundColor: 0x000000, // Black background
         antialias: true
     });
+    document.body.appendChild(app.view);
 
-    // Simple graphic: a red rectangle
-    const rectangle = new PIXI.Graphics();
-    rectangle.beginFill(0xFF0000); // Red color
-    rectangle.drawRect(0, 0, 100, 100);
-    rectangle.endFill();
-    rectangle.x = app.screen.width / 2;
-    rectangle.y = app.screen.height / 2;
-    rectangle.pivot.x = rectangle.width / 2;
-    rectangle.pivot.y = rectangle.height / 2;
-    app.stage.addChild(rectangle);
+    // Array to hold parallax layers
+    const layers = [];
 
-    // Basic animation (optional)
+    // Placeholder for dynamic image loading and parallax logic
+    // Images will be loaded and added here by the serverless function.
+    // Each layer will have a 'depth' property to control its movement.
+
+    // Example structure for a layer:
+    // const layer1 = PIXI.Sprite.from('assets/layer1.png');
+    // layer1.anchor.set(0.5);
+    // layer1.x = app.screen.width / 2;
+    // layer1.y = app.screen.height / 2;
+    // layer1.depth = 0.1; // Smaller value for background layers, larger for foreground
+    // layers.push(layer1);
+    // app.stage.addChild(layer1);
+
+    // Mouse position tracking
+    let mouseX = 0;
+    let mouseY = 0;
+
+    window.addEventListener('mousemove', (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+    });
+
+    // Parallax update on each frame
     app.ticker.add(() => {
-        rectangle.rotation += 0.01;
+        const centerX = app.screen.width / 2;
+        const centerY = app.screen.height / 2;
+
+        const offsetX = (mouseX - centerX) * 0.005; // Adjust multiplier for sensitivity
+        const offsetY = (mouseY - centerY) * 0.005;
+
+        layers.forEach(layer => {
+            // Apply parallax effect based on depth
+            layer.x = centerX + (offsetX * layer.depth * app.screen.width);
+            layer.y = centerY + (offsetY * layer.depth * app.screen.height);
+        });
     });
 
     // Handle window resizing
     window.addEventListener('resize', () => {
-        app.renderer.resize(window.innerWidth, window.innerHeight);
-        rectangle.x = app.screen.width / 2;
-        rectangle.y = app.screen.height / 2;
+        // Pixi's resizeTo: window handles the app.renderer.resize automatically
+        // Re-center layers if necessary, though anchor.set(0.5) helps maintain center
+        layers.forEach(layer => {
+            layer.x = app.screen.width / 2;
+            layer.y = app.screen.height / 2;
+        });
     });
 };

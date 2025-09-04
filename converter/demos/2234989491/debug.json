@@ -1,0 +1,20 @@
+{
+    "timestamp": "2025-09-04T13:31:55.686061",
+    "input_path": "C:\\Users\\priya\\.vscode\\code\\WallpaperEngine-WebExporter\\test_samples\\video_sample",
+    "output_base_path": "converter\\demos\\2234989491",
+    "forced_type": null,
+    "process_all": false,
+    "results": [
+        {
+            "wallpaper_name": "video_sample",
+            "detected_type": "video",
+            "conversion_type": "video",
+            "metadata": {
+                "video_file": "sample.mp4"
+            },
+            "status": "failed",
+            "output_dir": "converter\\demos\\2234989491\\web_video_sample_448a",
+            "error": "Failed to generate IR."
+        }
+    ]
+}

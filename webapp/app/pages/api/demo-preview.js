@@ -8,15 +8,16 @@ export default function handler(req, res) {
 
     // Simulate different demo previews based on ID
     if (id === '1') {
-      // Redirect to a placeholder image for ID 1
+      console.log(`[API] Redirecting demo-preview for ID: ${id} to /placeholder1.png`);
       res.redirect(302, '/placeholder1.png');
     } else if (id === '2') {
-      // Redirect to another placeholder image for ID 2
+      console.log(`[API] Redirecting demo-preview for ID: ${id} to /placeholder2.jpg`);
       res.redirect(302, '/placeholder2.jpg');
     } else {
-      // Default to a generic placeholder if ID is not recognized
+      console.warn(`[API] Unrecognized demo ID: ${id}. Redirecting to default /placeholder1.png`);
       res.redirect(302, '/placeholder1.png');
     }
+    console.log(`[API] Demo preview request for ID: ${id} handled successfully.`);
   } else {
     // Handle any other HTTP method
     res.setHeader('Allow', ['GET']);
